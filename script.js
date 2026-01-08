@@ -22,22 +22,21 @@ async function loadCoinData() {
     const updateText = document.getElementById("lastUpdateText");
 
     try {
-        // Cache (önbellek) sorununu önlemek için timestamp ekliyoruz
         const url = "coin_backend/data.json?t=" + Date.now(); 
         const response = await fetch(url);
         
         if (!response.ok) throw new Error("Veri dosyasına ulaşılamıyor!");
         
         const analysisData = await response.json();
-        console.log("Gelen Veri Kontrolü:", analysisData); // Konsolda 'Object' olarak görünen veri
+        console.log("Gelen Veri:", analysisData); // Konsoldaki 'Object'
 
-        // 🔥 ESNEK VERİ YAKALAMA: Veri yapısı ne olursa olsun 'allCoins'i doldurur
+        // 🔥 BURASI KRİTİK: Veri paketini (Object) açıp coin listesini buluyoruz 🔥
         if (analysisData.coins && Array.isArray(analysisData.coins)) {
             allCoins = analysisData.coins;
         } else if (Array.isArray(analysisData)) {
             allCoins = analysisData;
         } else if (typeof analysisData === 'object') {
-            // Eğer veri objeyse, içindeki ilk liste (array) olan anahtarı bulup onu çekiyoruz
+            // Eğer veri objeyse, içindeki ilk liste olan anahtarı bul (Örn: 'coins', 'data' vb.)
             const listKey = Object.keys(analysisData).find(key => Array.isArray(analysisData[key]));
             allCoins = listKey ? analysisData[listKey] : [];
         }
@@ -49,8 +48,8 @@ async function loadCoinData() {
         }
 
     } catch (error) {
-        console.error("KRİTİK HATA:", error);
-        if (tbody) tbody.innerHTML = `<tr><td colspan="8" style="color:#ff4444; text-align:center;">Veri Yükleme Hatası: ${error.message}</td></tr>`;
+        console.error("HATA:", error);
+        if (tbody) tbody.innerHTML = `<tr><td colspan="8" style="color:red; text-align:center;">Hata: ${error.message}</td></tr>`;
     }
 }
 
@@ -61,9 +60,8 @@ function renderTable(data) {
     
     tbody.innerHTML = "";
     
-    // Veri gelene kadar kullanıcıyı bilgilendiriyoruz
     if (!data || data.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ Gösterilecek veri bulunamadı. Filtreleri kontrol edin.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ Veri paketi boş. GitHub'daki data.json'u kontrol edin.</td></tr>`;
         return;
     }
     
@@ -89,13 +87,7 @@ function renderTable(data) {
             <td style="color:${positionColor}; font-weight:bold;">${c.position || "-"}</td>
         `;
 
-        // Favori Tıklama
-        row.querySelector(".fav-cell").onclick = (e) => {
-            e.stopPropagation();
-            toggleFavorite(c.symbol);
-        };
-
-        // TradingView Linki
+        row.querySelector(".fav-cell").onclick = () => toggleFavorite(c.symbol);
         row.querySelector(".coin-symbol").onclick = () => {
             window.open(`https://www.tradingview.com/chart/?symbol=BINANCE:${c.symbol}`, '_blank');
         };
@@ -114,24 +106,13 @@ function toggleFavorite(symbol) {
 // ====== BAŞLATMA ======
 document.addEventListener("DOMContentLoaded", () => {
     loadCoinData();
-    setInterval(loadCoinData, 15 * 60 * 1000); // 15 dk bir otomatik güncelle
+    setInterval(loadCoinData, 15 * 60 * 1000);
     
     const searchInput = document.getElementById("coinSearch");
     if (searchInput) {
         searchInput.addEventListener("input", (e) => {
             const term = e.target.value.toUpperCase();
-            const filtered = allCoins.filter(c => c.symbol.includes(term));
-            renderTable(filtered);
-        });
-    }
-
-    const analyzeBtn = document.getElementById("analyzeBtn");
-    if (analyzeBtn) {
-        analyzeBtn.addEventListener("click", () => {
-            analyzeBtn.textContent = "⌛ Güncelleniyor...";
-            loadCoinData().finally(() => {
-                setTimeout(() => { analyzeBtn.textContent = "⚡ Analizi Güncelle ve Yenile"; }, 1000);
-            });
+            renderTable(allCoins.filter(c => c.symbol.includes(term)));
         });
     }
 });
