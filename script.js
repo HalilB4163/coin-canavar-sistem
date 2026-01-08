@@ -30,7 +30,7 @@ async function loadCoinData() {
         const analysisData = await response.json();
         console.log("Gelen Veri:", analysisData); // Konsoldaki 'Object'
 
-        // 🔥 BURASI KRİTİK: Veri paketini (Object) açıp coin listesini buluyoruz 🔥
+        // 🔥 ESNEK VERİ YAKALAMA: Veri paketi (Object) içindeki listeyi bulur 🔥
         if (analysisData.coins && Array.isArray(analysisData.coins)) {
             allCoins = analysisData.coins;
         } else if (Array.isArray(analysisData)) {
@@ -48,8 +48,8 @@ async function loadCoinData() {
         }
 
     } catch (error) {
-        console.error("HATA:", error);
-        if (tbody) tbody.innerHTML = `<tr><td colspan="8" style="color:red; text-align:center;">Hata: ${error.message}</td></tr>`;
+        console.error("KRİTİK HATA:", error);
+        if (tbody) tbody.innerHTML = `<tr><td colspan="8" style="color:#ff4444; text-align:center;">Hata: ${error.message}</td></tr>`;
     }
 }
 
@@ -61,7 +61,7 @@ function renderTable(data) {
     tbody.innerHTML = "";
     
     if (!data || data.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ Veri paketi boş. GitHub'daki data.json'u kontrol edin.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ GitHub'daki data.json'un içine veri yazılmamış.</td></tr>`;
         return;
     }
     
@@ -115,4 +115,15 @@ document.addEventListener("DOMContentLoaded", () => {
             renderTable(allCoins.filter(c => c.symbol.includes(term)));
         });
     }
+
+    const analyzeBtn = document.getElementById("analyzeBtn");
+    if (analyzeBtn) {
+        analyzeBtn.addEventListener("click", () => {
+            analyzeBtn.textContent = "⌛ Güncelleniyor...";
+            loadCoinData().finally(() => {
+                setTimeout(() => { analyzeBtn.textContent = "⚡ Analizi Güncelle ve Yenile"; }, 1000);
+            });
+        });
+    }
 });
+
