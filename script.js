@@ -9,6 +9,7 @@ const manualLogoMap = {
     "MASKUSDT": "https://assets.coingecko.com/coins/images/14051/standard/Mask_Network.jpg?1696513776"
 };
 
+// ====== FİYAT FORMATLAMA ======
 function formatPrice(price) {
     if (price == null || isNaN(price)) { return "-"; }
     if (price < 0.001 && price > 0) { return price.toFixed(8); }
@@ -16,22 +17,13 @@ function formatPrice(price) {
     return price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
+// ====== LOGO YÖNETİMİ ======
 function getBaseSymbol(symbol) {
     let base = symbol;
     const quotes = ["USDT", "BUSD", "USDC", "TUSD", "FDUSD", "ETH", "BTC"];
     for (const quote of quotes) { if (base.endsWith(quote) && base.length > quote.length) { base = base.substring(0, base.length - quote.length); break; } }
     const prefixes = ["1000000", "100000", "1000", "100"];
     for (const prefix of prefixes) { if (base.startsWith(prefix)) { base = base.substring(prefix.length); break; } }
-    if (symbol === "1000LUNCUSDT") return "lunc";
-    if (symbol === "LUNA2USDT") return "luna"; 
-    if (symbol === "BTCDOMUSDT") return "btc";
-    if (symbol === "1000PEPEUSDT") return "pepe";
-    if (symbol === "1000FLOKIUSDT") return "floki";
-    if (symbol === "1000XECUSDT") return "xec";
-    if (symbol === "1000SHIBUSDT") return "shib";
-    if (symbol === "1000SATSUSDT") return "sats";
-    if (symbol === "1000RATSUSDT") return "rats";
-    if (symbol === "1000BONKUSDT") return "bonk";
     return base.toLowerCase();
 }
 
@@ -40,116 +32,83 @@ function getLogoUrl(symbol) {
     return `https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/color/${baseSymbol}.svg`;
 }
 
+// ====== OTOMATİK YENİLEME (15 DK) ======
 function setupSyncRefresh() {
     const now = new Date();
     const mins = now.getMinutes();
-    const secs = now.getSeconds();
     const nextInterval = 15 - (mins % 15);
-    const msToWait = (nextInterval * 60 - secs) * 1000;
-    console.log(`⏱️ Senkronizasyon: ${nextInterval} dakika sonra otomatik yenilenecek.`);
+    const msToWait = (nextInterval * 60 - now.getSeconds()) * 1000;
     setTimeout(() => {
         loadCoinData(); 
         setInterval(loadCoinData, 15 * 60 * 1000); 
     }, msToWait);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    loadCoinData();
-    setupSyncRefresh();
-    const analyzeBtn = document.getElementById("analyze-btn");
-    if (analyzeBtn) {
-        analyzeBtn.addEventListener("click", () => {
-            analyzeBtn.textContent = "⏳ Analiz Ediliyor...";
-            analyzeBtn.disabled = true;
-            loadCoinData().then(() => {
-                setTimeout(() => {
-                    analyzeBtn.textContent = "🔄 Analizi Güncelle";
-                    analyzeBtn.disabled = false;
-                }, 1000);
-            });
-        });
-    }
-});
-
+// ====== ANA VERİ YÜKLEME ======
 async function loadCoinData() {
     const tbody = document.querySelector("#coinTable tbody");
     if (tbody && tbody.innerHTML.trim() === "") {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;color:#aaa;">⏳ Analiz verileri yükleniyor...</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;color:#aaa;">⏳ Veriler çekiliyor...</td></tr>`;
     }
 
     try {
-        // 🔥 KRİTİK DÜZELTME: Yol 'coin_backend/data.json' olarak güncellendi!
+        // Netlify ve Klasör yapısına uygun yol
         const url = `${window.location.origin}/coin_backend/data.json?t=${Date.now()}`;
         const response = await fetch(url);
-        if (!response.ok) throw new Error(`data.json bulunamadı!`);
+        if (!response.ok) throw new Error(`Veri dosyası (data.json) bulunamadı!`);
         const analysisData = await response.json();
 
         tbody.innerHTML = ""; 
-        if (!analysisData.coins || analysisData.coins.length === 0) {
-            tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;color:#888;">Analiz verisi bulunamadı.</td></tr>`;
-            return;
-        }
-
         analysisData.coins.forEach((c) => {
             const row = document.createElement("tr");
-            const tradingViewSymbol = `BINANCE:${c.symbol}`;
-            const tradingViewUrl = `https://www.tradingview.com/chart/?symbol=${encodeURIComponent(tradingViewSymbol)}`;
+            const tradingViewUrl = `https://www.tradingview.com/chart/?symbol=BINANCE:${c.symbol}`;
             const positionColor = c.position === "Long" ? "limegreen" : c.position === "Short" ? "red" : "gray";
-            const isFav = favorites.includes(c.symbol);
-            const star = isFav ? "⭐" : "☆";
+            const star = favorites.includes(c.symbol) ? "⭐" : "☆";
             let logoUrl = manualLogoMap[c.symbol] || getLogoUrl(c.symbol);
-            const logoImgTag = `<img src="${logoUrl}" class="coin-logo" alt="" onerror="this.style.display='none'">`;
 
             row.innerHTML = `
                 <td class="fav-cell" style="cursor:pointer">${star}</td>
                 <td>
-                    <div class="coin-cell-content">
-                        ${logoImgTag}
+                    <div class="coin-cell-content" style="display:flex; align-items:center; gap:8px;">
+                        <img src="${logoUrl}" class="coin-logo" width="24" onerror="this.style.visibility='hidden'">
                         <span class="coin-symbol" style="cursor:pointer; text-decoration:underline; color:#79c0ff">${c.symbol}</span>
                     </div>
                 </td>
-                <td class="price-cell">${formatPrice(c.price)}</td>
+                <td>${formatPrice(c.price)}</td>
                 <td>${c.rsi ?? "-"}</td>
-                <td>${c.price_change?.toFixed(2) ?? "-"}%</td>
-                <td>${c.volume_change?.toFixed(2) ?? "-"}%</td>
-                <td>${c.score?.toFixed(2) ?? "-"}</td>
+                <td style="color:${c.price_change >= 0 ? 'limegreen' : 'red'}">${c.price_change?.toFixed(2)}%</td>
+                <td>${c.volume_change?.toFixed(2)}%</td>
+                <td>${c.score}</td>
                 <td style="color:${positionColor}; font-weight:bold;">${c.position}</td>
             `;
             tbody.appendChild(row);
 
-            row.querySelector(".fav-cell").addEventListener("click", (event) => {
-                event.stopPropagation();
-                if (favorites.includes(c.symbol)) {
-                    removeFavorite(c.symbol, event.target);
-                } else {
-                    toggleFavorite(c.symbol, event.target);
-                }
-            });
-
-            row.querySelector(".coin-symbol").addEventListener('click', (event) => {
-                event.stopPropagation();
-                window.open(tradingViewUrl, '_blank');
-            });
+            // Tıklama olayları
+            row.querySelector(".fav-cell").onclick = () => toggleFavorite(c.symbol);
+            row.querySelector(".coin-symbol").onclick = () => window.open(tradingViewUrl, '_blank');
         });
 
-        let updateText = document.querySelector("#lastUpdate");
-        const container = document.querySelector(".container");
-        if (!updateText && container) {
-            updateText = document.createElement("p");
-            updateText.id = "lastUpdate";
-            updateText.style.textAlign = "center";
-            updateText.style.color = "#00ffa2";
-            updateText.style.marginTop = "10px";
-            container.appendChild(updateText);
-        }
-        if (updateText) {
-            updateText.textContent = `🕒 Analiz Zamanı: ${analysisData.last_update || "Bilinmiyor"}`;
-        }
+        // Güncelleme Saatini Yaz
+        let updateText = document.getElementById("lastUpdate");
+        if (updateText) updateText.textContent = `🕒 Son Güncelleme: ${analysisData.last_update}`;
+
     } catch (error) {
-        console.error("❌ Hata:", error);
         if(tbody) tbody.innerHTML = `<tr><td colspan="8" style="color:red;text-align:center;">Hata: ${error.message}</td></tr>`;
     }
 }
 
-// Favori ve Diğer Fonksiyonlar (Kodun geri kalanı aynı)
-// ... (Favori, Arama ve Firebase kısımlarını buraya ekleyebilirsin)
+// ====== FAVORİ VE ARAMA SİSTEMİ ======
+function toggleFavorite(symbol) {
+    if (favorites.includes(symbol)) {
+        favorites = favorites.filter(f => f !== symbol);
+    } else {
+        favorites.push(symbol);
+    }
+    loadCoinData(); // Tabloyu tazele
+}
+
+// Başlat
+document.addEventListener("DOMContentLoaded", () => {
+    loadCoinData();
+    setupSyncRefresh();
+});
