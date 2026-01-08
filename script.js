@@ -2,67 +2,40 @@
 let favorites = JSON.parse(localStorage.getItem('coin_favs')) || [];
 let allCoins = []; 
 
-const manualLogoMap = {
-    "TURTLEUSDT": "https://assets.coingecko.com/coins/images/69595/standard/OUDzqTkE_400x400.png?1759166194",
-    "C98USDT": "https://assets.coingecko.com/coins/images/17117/standard/logo.png?1696516677",
-    "MASKUSDT": "https://assets.coingecko.com/coins/images/14051/standard/Mask_Network.jpg?1696513776"
-};
-
-// ====== YARDIMCI FONKSİYONLAR ======
-function formatPrice(price) {
-    if (price == null || isNaN(price)) return "-";
-    const p = parseFloat(price);
-    if (p < 0.001) return p.toFixed(8);
-    if (p < 1) return p.toFixed(4);
-    return p.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
-
-function getLogoUrl(symbol) {
-    let base = symbol.replace(/USDT$|BUSD$|USDC$/g, "");
-    base = base.replace(/^1000000|^100000|^1000|^100/g, "");
-    return `https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/svg/color/${base.toLowerCase()}.svg`;
-}
-
 // ====== ANA VERİ YÜKLEME ======
 async function loadCoinData() {
     const tbody = document.querySelector("#coinTable tbody");
     const updateText = document.getElementById("lastUpdateText");
 
     try {
-        // 🔥 Önbellek sorunlarını önlemek için her seferinde yeni zaman damgası ekler
         const url = "coin_backend/data.json?t=" + Date.now(); 
         const response = await fetch(url);
         
-        if (!response.ok) {
-            throw new Error(`Dosya bulunamadı! (Hata: ${response.status})`);
-        }
+        if (!response.ok) throw new Error("Dosya yüklenemedi!");
         
         const analysisData = await response.json();
-        console.log("Gelen Veri Kontrolü:", analysisData); // Konsolda veriyi görmen için
-        
-        // 🔥 ESNEK VERİ OKUMA: Veri hem 'coins' içindeyse hem de direkt listeyse çalışır
+        console.log("Gelen Veri:", analysisData); 
+
+        // 🔥 ESNEK VERİ YAKALAMA: Veri her nerede olursa olsun bulur
         if (analysisData.coins && Array.isArray(analysisData.coins)) {
             allCoins = analysisData.coins;
         } else if (Array.isArray(analysisData)) {
             allCoins = analysisData;
-        } else {
-            allCoins = [];
+        } else if (typeof analysisData === 'object') {
+            // Eğer veri objeyse ama liste içindeyse (örnek: data: { ... })
+            const firstKey = Object.keys(analysisData).find(key => Array.isArray(analysisData[key]));
+            allCoins = firstKey ? analysisData[firstKey] : [];
         }
 
         renderTable(allCoins);
         
         if (updateText) {
-            updateText.textContent = analysisData.last_update || "Yeni Güncellendi";
+            updateText.textContent = analysisData.last_update || new Date().toLocaleString();
         }
 
     } catch (error) {
-        console.error("KRİTİK HATA:", error);
-        if (tbody) {
-            tbody.innerHTML = `<tr><td colspan="8" style="color:#ff4444; text-align:center; padding: 20px;">
-                ⚠️ Veriler şu an yüklenemiyor. <br> 
-                <small>Hata Detayı: ${error.message}</small>
-            </td></tr>`;
-        }
+        console.error("HATA:", error);
+        if (tbody) tbody.innerHTML = `<tr><td colspan="8" style="color:red; text-align:center;">Veri hatası: ${error.message}</td></tr>`;
     }
 }
 
@@ -73,9 +46,8 @@ function renderTable(data) {
     
     tbody.innerHTML = "";
     
-    // 🔥 Boş tablo kontrolü
     if (!data || data.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">Veri bekliyor... Lütfen arama kutusunun boş olduğundan emin olun.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ Liste boş veya format uyumsuz.</td></tr>`;
         return;
     }
     
@@ -83,70 +55,39 @@ function renderTable(data) {
         const row = document.createElement("tr");
         const positionColor = c.position === "Long" ? "#00ff88" : c.position === "Short" ? "#ff4444" : "#aaa";
         const star = favorites.includes(c.symbol) ? "⭐" : "☆";
-        const logoUrl = manualLogoMap[c.symbol] || getLogoUrl(c.symbol);
 
         row.innerHTML = `
-            <td class="fav-cell" style="cursor:pointer; font-size:1.2rem; text-align:center;">${star}</td>
-            <td>
-                <div style="display:flex; align-items:center; gap:10px;">
-                    <img src="${logoUrl}" width="24" height="24" onerror="this.style.display='none'">
-                    <span class="coin-symbol" style="cursor:pointer; font-weight:bold; color:#00d4ff;">${c.symbol}</span>
-                </div>
-            </td>
-            <td>${formatPrice(c.price)}</td>
+            <td class="fav-cell" style="cursor:pointer; text-align:center;">${star}</td>
+            <td style="font-weight:bold; color:#00d4ff;">${c.symbol || "Bilinmiyor"}</td>
+            <td>${c.price || "-"}</td>
             <td>${c.rsi || "-"}</td>
-            <td style="color:${c.price_change >= 0 ? '#00ff88' : '#ff4444'}">${c.price_change ? c.price_change.toFixed(2) + '%' : '0.00%'}</td>
-            <td style="color:${c.volume_change >= 0 ? '#00ff88' : '#ff4444'}">${c.volume_change ? c.volume_change.toFixed(2) + '%' : '0.00%'}</td>
+            <td style="color:${parseFloat(c.price_change) >= 0 ? '#00ff88' : '#ff4444'}">${c.price_change || "0"}%</td>
+            <td style="color:${parseFloat(c.volume_change) >= 0 ? '#00ff88' : '#ff4444'}">${c.volume_change || "0"}%</td>
             <td>${c.score || "0"}</td>
-            <td style="color:${positionColor}; font-weight:bold;">${c.position || "Nötr"}</td>
+            <td style="color:${positionColor}; font-weight:bold;">${c.position || "-"}</td>
         `;
 
-        row.querySelector(".fav-cell").onclick = (e) => {
-            e.stopPropagation();
-            toggleFavorite(c.symbol);
-        };
-        
-        row.querySelector(".coin-symbol").onclick = () => {
-            window.open(`https://www.tradingview.com/chart/?symbol=BINANCE:${c.symbol}`, '_blank');
-        };
-
+        row.querySelector(".fav-cell").onclick = () => toggleFavorite(c.symbol);
         tbody.appendChild(row);
     });
 }
 
-// ====== FAVORİ SİSTEMİ ======
 function toggleFavorite(symbol) {
-    if (favorites.includes(symbol)) {
-        favorites = favorites.filter(f => f !== symbol);
-    } else {
-        favorites.push(symbol);
-    }
+    if (favorites.includes(symbol)) favorites = favorites.filter(f => f !== symbol);
+    else favorites.push(symbol);
     localStorage.setItem('coin_favs', JSON.stringify(favorites));
     renderTable(allCoins); 
 }
 
-// ====== BAŞLATMA ======
 document.addEventListener("DOMContentLoaded", () => {
     loadCoinData();
     setInterval(loadCoinData, 15 * 60 * 1000);
-
+    
     const searchInput = document.getElementById("coinSearch");
     if (searchInput) {
         searchInput.addEventListener("input", (e) => {
             const term = e.target.value.toUpperCase();
-            const filtered = allCoins.filter(c => c.symbol.includes(term));
-            renderTable(filtered);
-        });
-    }
-
-    const analyzeBtn = document.getElementById("analyzeBtn");
-    if (analyzeBtn) {
-        analyzeBtn.addEventListener("click", () => {
-            analyzeBtn.textContent = "⏳ Güncelleniyor...";
-            loadCoinData().finally(() => {
-                setTimeout(() => { analyzeBtn.textContent = "⚡ Analizi Güncelle ve Yenile"; }, 1000);
-            });
+            renderTable(allCoins.filter(c => c.symbol.includes(term)));
         });
     }
 });
-
