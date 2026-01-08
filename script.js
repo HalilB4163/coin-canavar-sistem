@@ -19,12 +19,18 @@ async function loadCoinData() {
 
         // 🔥 FORMAT TANIMAYAN YAKALAMA MANTIĞI 🔥
         // Veri ya direkt listedir, ya 'coins' içindedir ya da 'data' içindedir.
-        allCoins = data.coins || (Array.isArray(data) ? data : data.data) || [];
-
-        // Eğer hala bulamadıysa objenin içindeki ilk listeyi çek
-        if (allCoins.length === 0 && typeof data === 'object') {
+        if (data.coins && Array.isArray(data.coins)) {
+            allCoins = data.coins;
+        } else if (Array.isArray(data)) {
+            allCoins = data;
+        } else if (data.data && Array.isArray(data.data)) {
+            allCoins = data.data;
+        } else if (typeof data === 'object') {
+            // Hiçbiri değilse objenin içindeki ilk listeyi çek
             const listKey = Object.keys(data).find(key => Array.isArray(data[key]));
             allCoins = listKey ? data[listKey] : [];
+        } else {
+            allCoins = [];
         }
 
         renderTable(allCoins);
@@ -47,7 +53,7 @@ function renderTable(data) {
     tbody.innerHTML = "";
     
     if (!data || data.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ GitHub'daki data.json dosyasının içini kontrol et, boş geliyor!</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ GitHub'daki data.json dosyasının içini kontrol et, boş geliyor olabilir!</td></tr>`;
         return;
     }
     
@@ -95,4 +101,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
