@@ -67,12 +67,18 @@ def analyze_symbol(symbol):
         return None
     
     score = price_change + (70 - abs(rsi - 50)) / 5 + volume_change / 10
-    pos = "Short" if rsi > 65 else "Long" if rsi < 35 else "Bekle"
+    
+    # 🔥 PİYASA DURGUNKEN BİLE TABLOYU DOLDURMAK İÇİN ESNETİLDİ 🔥
+    pos = "Short" if rsi > 60 else "Long" if rsi < 40 else "Nötr"
     
     return {
-        "symbol": symbol, "price": round(price, 8) if price < 1 else round(price, 4),
-        "rsi": round(rsi, 2), "price_change": round(price_change, 2),
-        "volume_change": round(volume_change, 2), "score": round(score, 2), "position": pos
+        "symbol": symbol, 
+        "price": round(price, 8) if price < 1 else round(price, 4),
+        "rsi": round(rsi, 2), 
+        "price_change": round(price_change, 2),
+        "volume_change": round(volume_change, 2), 
+        "score": round(score, 2), 
+        "position": pos
     }
 
 def run_analysis():
@@ -82,23 +88,33 @@ def run_analysis():
 
     results = []
     total = len(symbols)
-    print(f"📊 {total} sembol taranıyor (Ölü coinler elenecek)...")
+    print(f"📊 {total} sembol taranıyor...")
 
     for idx, s in enumerate(symbols):
         r = analyze_symbol(s)
         if r: results.append(r)
         if idx % 50 == 0: print(f"⏳ İlerleme: %{round((idx/total)*100)}")
-        time.sleep(0.01) # GitHub hızına göre ayarlandı
+        time.sleep(0.01)
 
-    # DOSYA YOLU DÜZELTME (GitHub Actions için)
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    output_path = os.path.join(current_dir, "data.json")
+    # 🔥 NETLİFY VE GİTHUB ACTIONS İÇİN GARANTİ DOSYA YOLU 🔥
+    # Dosyayı her zaman coin_backend klasörüne yazmaya zorlar
+    base_dir = os.getcwd()
+    target_dir = os.path.join(base_dir, "coin_backend")
     
-    data = {"last_update": datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "coins": results}
+    if not os.path.exists(target_dir):
+        os.makedirs(target_dir)
+        
+    output_path = os.path.join(target_dir, "data.json")
+    
+    data = {
+        "last_update": datetime.now().strftime("%Y-%m-%d %H:%M:%S"), 
+        "coins": results
+    }
+    
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
-    print(f"✅ Analiz bitti. {len(results)} canlı coin kaydedildi.")
+    print(f"✅ Analiz bitti. {len(results)} coin '{output_path}' konumuna kaydedildi.")
 
 if __name__ == "__main__":
-    run_analysis() # Döngü kaldırıldı, GitHub bunu her 15dk'da bir kendi çalıştıracak.()
+    run_analysis()
