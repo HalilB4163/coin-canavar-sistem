@@ -1,6 +1,6 @@
 // ====== GLOBAL DEĞİŞKENLER ======
 let favorites = JSON.parse(localStorage.getItem('coin_favs')) || [];
-let allCoins = []; // Arama ve filtreleme için veriyi burada tutacağız
+let allCoins = []; 
 
 const manualLogoMap = {
     "TURTLEUSDT": "https://assets.coingecko.com/coins/images/69595/standard/OUDzqTkE_400x400.png?1759166194",
@@ -29,7 +29,7 @@ async function loadCoinData() {
     const updateText = document.getElementById("lastUpdate");
 
     try {
-        // Nokta bölü (./) kullanarak mevcut dizinden gitmesini garanti ediyoruz
+        // 🔥 Klasör yapına uygun yol: ./coin_backend/data.json
         const response = await fetch(`./coin_backend/data.json?t=${Date.now()}`);
         if (!response.ok) throw new Error(`Veri dosyası bulunamadı!`);
         
@@ -41,7 +41,7 @@ async function loadCoinData() {
         if (updateText) updateText.textContent = `🕒 Son Güncelleme: ${analysisData.last_update || "Bilinmiyor"}`;
 
     } catch (error) {
-        console.error(error);
+        console.error("Veri yükleme hatası:", error);
         if (tbody) tbody.innerHTML = `<tr><td colspan="8" style="color:red;text-align:center;">Hata: ${error.message}</td></tr>`;
     }
 }
@@ -75,10 +75,7 @@ function renderTable(data) {
             <td style="color:${positionColor}; font-weight:bold;">${c.position}</td>
         `;
 
-        // Favori Tıklama
         row.querySelector(".fav-cell").onclick = () => toggleFavorite(c.symbol);
-        
-        // TradingView Linki
         row.querySelector(".coin-symbol").onclick = () => {
             window.open(`https://www.tradingview.com/chart/?symbol=BINANCE:${c.symbol}`, '_blank');
         };
@@ -95,17 +92,14 @@ function toggleFavorite(symbol) {
         favorites.push(symbol);
     }
     localStorage.setItem('coin_favs', JSON.stringify(favorites));
-    renderTable(allCoins); // Tabloyu anlık güncelle
+    renderTable(allCoins); 
 }
 
-// ====== OTOMATİK YENİLEME VE BAŞLATMA ======
+// ====== BAŞLATMA ======
 document.addEventListener("DOMContentLoaded", () => {
     loadCoinData();
-    
-    // Her 15 dakikada bir otomatik yenile
     setInterval(loadCoinData, 15 * 60 * 1000);
 
-    // Varsa arama kutusu için dinleyici
     const searchInput = document.getElementById("coinSearch");
     if (searchInput) {
         searchInput.addEventListener("input", (e) => {
