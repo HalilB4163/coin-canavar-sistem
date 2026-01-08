@@ -22,13 +22,14 @@ async function loadCoinData() {
     const updateText = document.getElementById("lastUpdateText");
 
     try {
+        // Cache (önbellek) sorununu önlemek için timestamp ekliyoruz
         const url = "coin_backend/data.json?t=" + Date.now(); 
         const response = await fetch(url);
         
         if (!response.ok) throw new Error("Veri dosyasına ulaşılamıyor!");
         
         const analysisData = await response.json();
-        console.log("Gelen Veri Kontrolü:", analysisData);
+        console.log("Gelen Veri Kontrolü:", analysisData); // Konsolda 'Object' olarak görünen veri
 
         // 🔥 ESNEK VERİ YAKALAMA: Veri yapısı ne olursa olsun 'allCoins'i doldurur
         if (analysisData.coins && Array.isArray(analysisData.coins)) {
@@ -36,6 +37,7 @@ async function loadCoinData() {
         } else if (Array.isArray(analysisData)) {
             allCoins = analysisData;
         } else if (typeof analysisData === 'object') {
+            // Eğer veri objeyse, içindeki ilk liste (array) olan anahtarı bulup onu çekiyoruz
             const listKey = Object.keys(analysisData).find(key => Array.isArray(analysisData[key]));
             allCoins = listKey ? analysisData[listKey] : [];
         }
@@ -59,8 +61,9 @@ function renderTable(data) {
     
     tbody.innerHTML = "";
     
+    // Veri gelene kadar kullanıcıyı bilgilendiriyoruz
     if (!data || data.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ Gösterilecek veri bulunamadı.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ Gösterilecek veri bulunamadı. Filtreleri kontrol edin.</td></tr>`;
         return;
     }
     
