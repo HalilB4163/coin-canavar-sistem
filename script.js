@@ -8,7 +8,7 @@ async function loadCoinData() {
     const updateText = document.getElementById("lastUpdateText");
 
     try {
-        // Timestamp ile önbelleği baypas ediyoruz
+        // Timestamp ile cache (önbellek) sorununu kökten çözüyoruz
         const url = "coin_backend/data.json?t=" + Date.now(); 
         const response = await fetch(url);
         
@@ -18,29 +18,27 @@ async function loadCoinData() {
         console.log("Gelen Veri Kontrolü:", data); // Konsolda gördüğün o 'Object'
 
         // 🔥 FORMAT TANIMAYAN YAKALAMA MANTIĞI 🔥
-        // Veri ya direkt listedir, ya 'coins' içindedir ya da 'data' içindedir.
-        if (data.coins && Array.isArray(data.coins)) {
+        // Veri hangi isimle gelirse gelsin (coins, data veya direkt liste) yakalar.
+        if (data && data.coins && Array.isArray(data.coins)) {
             allCoins = data.coins;
         } else if (Array.isArray(data)) {
             allCoins = data;
-        } else if (data.data && Array.isArray(data.data)) {
+        } else if (data && data.data && Array.isArray(data.data)) {
             allCoins = data.data;
         } else if (typeof data === 'object') {
-            // Hiçbiri değilse objenin içindeki ilk listeyi çek
+            // Eğer hiçbir isimle eşleşmezse objenin içindeki ilk listeyi çek
             const listKey = Object.keys(data).find(key => Array.isArray(data[key]));
             allCoins = listKey ? data[listKey] : [];
-        } else {
-            allCoins = [];
         }
 
         renderTable(allCoins);
         
-        if (updateText) {
-            updateText.textContent = data.last_update || new Date().toLocaleString();
+        if (updateText && data.last_update) {
+            updateText.textContent = data.last_update;
         }
 
     } catch (error) {
-        console.error("KRİTİK HATA:", error);
+        console.error("HATA:", error);
         if (tbody) tbody.innerHTML = `<tr><td colspan="8" style="color:#ff4444; text-align:center;">Hata: ${error.message}</td></tr>`;
     }
 }
@@ -53,7 +51,7 @@ function renderTable(data) {
     tbody.innerHTML = "";
     
     if (!data || data.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ GitHub'daki data.json dosyasının içini kontrol et, boş geliyor olabilir!</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">⚠️ GitHub'daki data.json dosyasının içini kontrol et, liste boş geliyor!</td></tr>`;
         return;
     }
     
