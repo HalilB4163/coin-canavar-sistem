@@ -1,0 +1,34 @@
+name: Coin_Canavar_Otomatiği
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # Her 15 dakikada bir otomatik çalışır
+  workflow_dispatch: # Manuel çalıştırma butonu ekler
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Dosyayı güncelleyebilmesi için gereken izin
+    steps:
+      - name: 1. Dosyaları Çek
+        uses: actions/checkout@v3
+
+      - name: 2. Python Hazırla
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 3. Kütüphaneleri Yükle
+        run: pip install requests pandas numpy
+
+      - name: 4. Analizi Başlat
+        run: python coin_backend/analyzer.py
+
+      - name: 5. Veriyi Kaydet
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add coin_backend/data.json
+          git commit -m "📊 Veri Güncellendi" || echo "Değişiklik yok"
+          git push
