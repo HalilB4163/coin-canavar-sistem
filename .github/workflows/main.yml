@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Dosya yazma izni
     steps:
       - name: 1. Dosyaları Çek
         uses: actions/checkout@v3
@@ -23,15 +23,18 @@ jobs:
         run: pip install requests pandas numpy
 
       - name: 4. Analizi Başlat
-        # Python kodunu çalıştırırken ana dizini baz almasını sağlıyoruz
         run: python coin_backend/analyzer.py
 
       - name: 5. Veriyi Kaydet ve Push Yap
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          # Değişikliği zorla algılatmak için
+          
+          # Dosyayı ekle
           git add coin_backend/data.json
-          # Eğer dosya değişmişse commit yap, değişmemişse hata verme
+          
+          # Değişiklik kontrolü ve commit
           git commit -m "📊 Veri Güncellendi: $(date)" || echo "Değişiklik yok"
+          
+          # Zorunlu push
           git push origin main
