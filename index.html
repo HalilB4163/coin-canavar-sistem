@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="user-bar">
+  <div class="user-bar">
     <div id="user-menu">
       <span id="username-display" class="user-email">Yükleniyor...</span>
       <div id="dropdown-menu" class="dropdown hidden">
@@ -69,7 +69,7 @@
     import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
     import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
 
-    // MODAL FONKSİYONLARI
+    // MODAL SİSTEMİ
     window.showModal = function(title, content) {
       const modal = document.getElementById('general-modal');
       document.getElementById('modal-title').textContent = title;
@@ -105,7 +105,7 @@
         window.currentUser = user; 
         loadUserData(user);
       } else {
-        // Eğer kullanıcı giriş yapmamışsa login'e gönder
+        // Oturum yoksa login'e at
         window.location.href = "login.html";
       }
     });
@@ -120,16 +120,18 @@
                 usernameDisplay.textContent = user.email;
             }
         } catch (error) {
-            console.error("Kullanıcı adı yüklenemedi:", error);
+            console.error("Kullanıcı adı hatası:", error);
             usernameDisplay.textContent = user.email;
         }
     }
 
+    // Dropdown Menü Kontrolü
     const dropdown = document.getElementById("dropdown-menu");
     const emailEl = document.getElementById("username-display");
     emailEl.addEventListener("click", () => { dropdown.classList.toggle("hidden"); });
     window.addEventListener("click", (e) => { if (!e.target.closest("#user-menu")) dropdown.classList.add("hidden"); });
 
+    // Sayfa Yönlendirmeleri
     document.getElementById("menu-profile").addEventListener("click", () => { window.location.href = "profile.html"; });
     document.getElementById("menu-logout").addEventListener("click", async () => {
       await signOut(auth);
