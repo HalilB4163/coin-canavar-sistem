@@ -26,29 +26,33 @@ function getLogoUrl(symbol) {
 // ====== ANA VERİ YÜKLEME ======
 async function loadCoinData() {
     const tbody = document.querySelector("#coinTable tbody");
-    const updateText = document.getElementById("lastUpdateText"); // Index'teki span ID'sine uygun hale getirildi
+    const updateText = document.getElementById("lastUpdateText");
 
     try {
-        // 🔥 Netlify ve GitHub Pages için en güvenli dosya yolu 🔥
+        // 🔥 Önbellek sorunlarını önlemek için her seferinde yeni zaman damgası ekler
         const url = "coin_backend/data.json?t=" + Date.now(); 
         const response = await fetch(url);
         
         if (!response.ok) {
-            throw new Error(`Veri dosyası yüklenemedi! (Durum: ${response.status})`);
+            throw new Error(`Dosya bulunamadı! (Hata: ${response.status})`);
         }
         
         const analysisData = await response.json();
+        console.log("Gelen Veri Kontrolü:", analysisData); // Konsolda veriyi görmen için
         
-        // Veri yapısı kontrolü
-        if (!analysisData || !analysisData.coins) {
-            throw new Error("JSON verisi beklenen formatta değil!");
+        // 🔥 ESNEK VERİ OKUMA: Veri hem 'coins' içindeyse hem de direkt listeyse çalışır
+        if (analysisData.coins && Array.isArray(analysisData.coins)) {
+            allCoins = analysisData.coins;
+        } else if (Array.isArray(analysisData)) {
+            allCoins = analysisData;
+        } else {
+            allCoins = [];
         }
 
-        allCoins = analysisData.coins;
         renderTable(allCoins);
         
         if (updateText) {
-            updateText.textContent = analysisData.last_update || "Bilinmiyor";
+            updateText.textContent = analysisData.last_update || "Yeni Güncellendi";
         }
 
     } catch (error) {
@@ -69,8 +73,9 @@ function renderTable(data) {
     
     tbody.innerHTML = "";
     
-    if (data.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;">Aranan kriterde coin bulunamadı.</td></tr>`;
+    // 🔥 Boş tablo kontrolü
+    if (!data || data.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 20px;">Veri bekliyor... Lütfen arama kutusunun boş olduğundan emin olun.</td></tr>`;
         return;
     }
     
@@ -123,8 +128,6 @@ function toggleFavorite(symbol) {
 // ====== BAŞLATMA ======
 document.addEventListener("DOMContentLoaded", () => {
     loadCoinData();
-    
-    // 15 dakikada bir güncelle
     setInterval(loadCoinData, 15 * 60 * 1000);
 
     const searchInput = document.getElementById("coinSearch");
@@ -136,7 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Analiz Butonu Desteği
     const analyzeBtn = document.getElementById("analyzeBtn");
     if (analyzeBtn) {
         analyzeBtn.addEventListener("click", () => {
@@ -147,3 +149,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
