@@ -29,9 +29,11 @@ async function loadCoinData() {
     const updateText = document.getElementById("lastUpdate");
 
     try {
-        // 🔥 Klasör yapına uygun yol: ./coin_backend/data.json
-        const response = await fetch(`./coin_backend/data.json?t=${Date.now()}`);
-        if (!response.ok) throw new Error(`Veri dosyası bulunamadı!`);
+        // 🔥 Botun yazdığı dosya: coin_backend/data.json
+        const url = `./coin_backend/data.json?t=${Date.now()}`;
+        const response = await fetch(url);
+        
+        if (!response.ok) throw new Error(`Veri dosyası (data.json) bulunamadı!`);
         
         const analysisData = await response.json();
         allCoins = analysisData.coins || [];
@@ -41,7 +43,7 @@ async function loadCoinData() {
         if (updateText) updateText.textContent = `🕒 Son Güncelleme: ${analysisData.last_update || "Bilinmiyor"}`;
 
     } catch (error) {
-        console.error("Veri yükleme hatası:", error);
+        console.error("HATA:", error);
         if (tbody) tbody.innerHTML = `<tr><td colspan="8" style="color:red;text-align:center;">Hata: ${error.message}</td></tr>`;
     }
 }
