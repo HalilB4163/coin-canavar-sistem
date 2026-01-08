@@ -102,3 +102,4 @@ if __name__ == "__main__":
         except Exception as e: print(f"🛑 Hata: {e}")
         print("😴 15 dakika bekleniyor...")
         time.sleep(900)
+
