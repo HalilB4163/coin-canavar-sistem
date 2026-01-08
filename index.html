@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.gstatic.com https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src 'self' https:;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.gstatic.com https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src 'self' https:;">
   <title>Coin Analiz Paneli</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -69,7 +69,6 @@
     import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
     import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
 
-    // MODAL SİSTEMİ
     window.showModal = function(title, content) {
       const modal = document.getElementById('general-modal');
       document.getElementById('modal-title').textContent = title;
@@ -105,7 +104,6 @@
         window.currentUser = user; 
         loadUserData(user);
       } else {
-        // Oturum yoksa login'e at
         window.location.href = "login.html";
       }
     });
@@ -125,13 +123,11 @@
         }
     }
 
-    // Dropdown Menü Kontrolü
     const dropdown = document.getElementById("dropdown-menu");
     const emailEl = document.getElementById("username-display");
     emailEl.addEventListener("click", () => { dropdown.classList.toggle("hidden"); });
     window.addEventListener("click", (e) => { if (!e.target.closest("#user-menu")) dropdown.classList.add("hidden"); });
 
-    // Sayfa Yönlendirmeleri
     document.getElementById("menu-profile").addEventListener("click", () => { window.location.href = "profile.html"; });
     document.getElementById("menu-logout").addEventListener("click", async () => {
       await signOut(auth);
