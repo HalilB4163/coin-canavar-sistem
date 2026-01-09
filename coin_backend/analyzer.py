@@ -7,28 +7,28 @@ def run_analysis():
     print("🚀 Veri toplama başladı...")
     results = []
 
-    # Binance GitHub Actions IP'lerini bloklamasın diye şart
-    headers = {
-        "User-Agent": "Mozilla/5.0"
-    }
+    headers = {"User-Agent": "Mozilla/5.0"}
 
     try:
-        # 1. Binance Futures Exchange Info
-        info_url = "https://fapi.binance.com/fapi/v1/exchangeInfo"
+        # ✅ SPOT (market-data-only) base URL
+        base = "https://data-api.binance.vision"
+
+        # 1) Spot exchangeInfo
+        info_url = f"{base}/api/v3/exchangeInfo"
         symbols_data = requests.get(info_url, headers=headers, timeout=20).json()
 
-        # Güvenlik: yanlış cevap gelirse patlamasın
         if "symbols" not in symbols_data:
             raise Exception(f"exchangeInfo beklenen formatta değil: {symbols_data}")
 
+        # Sadece USDT ve TRADING olanlar
         symbols = [
             s["symbol"]
             for s in symbols_data["symbols"]
             if s.get("quoteAsset") == "USDT" and s.get("status") == "TRADING"
         ][:150]
 
-        # 2. 24 saatlik ticker verileri
-        ticker_url = "https://fapi.binance.com/fapi/v1/ticker/24hr"
+        # 2) Spot 24hr ticker
+        ticker_url = f"{base}/api/v3/ticker/24hr"
         tickers = requests.get(ticker_url, headers=headers, timeout=20).json()
 
         if not isinstance(tickers, list):
@@ -73,4 +73,6 @@ def run_analysis():
 
 if __name__ == "__main__":
     run_analysis()
+
+
 
