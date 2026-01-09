@@ -20,12 +20,15 @@ def run_analysis():
         if "symbols" not in symbols_data:
             raise Exception(f"exchangeInfo beklenen formatta değil: {symbols_data}")
 
-        # Sadece USDT ve TRADING olanlar
-        symbols = [
-            s["symbol"]
+        # ✅ USDT + TRADING olanlar için symbol -> baseAsset map
+        symbol_base_map = {
+            s["symbol"]: s.get("baseAsset")
             for s in symbols_data["symbols"]
             if s.get("quoteAsset") == "USDT" and s.get("status") == "TRADING"
-        ]
+        }
+
+        # İstersen limit koy: list(symbol_base_map.keys())[:500]
+        symbols = list(symbol_base_map.keys())
 
         # 2) Spot 24hr ticker
         ticker_url = f"{base}/api/v3/ticker/24hr"
@@ -46,6 +49,7 @@ def run_analysis():
 
             results.append({
                 "symbol": s,
+                "base": symbol_base_map.get(s) or s.replace("USDT", ""),  # ✅ logo için
                 "price": round(price, 6) if price < 1 else round(price, 2),
                 "rsi": 50.0,
                 "price_change": round(change, 2),
@@ -73,7 +77,6 @@ def run_analysis():
 
 if __name__ == "__main__":
     run_analysis()
-
 
 
 
