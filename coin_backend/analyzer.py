@@ -25,7 +25,7 @@ def run_analysis():
             s["symbol"]
             for s in symbols_data["symbols"]
             if s.get("quoteAsset") == "USDT" and s.get("status") == "TRADING"
-        ][:150]
+        ]
 
         # 2) Spot 24hr ticker
         ticker_url = f"{base}/api/v3/ticker/24hr"
@@ -73,6 +73,7 @@ def run_analysis():
 
 if __name__ == "__main__":
     run_analysis()
+
 
 
 
