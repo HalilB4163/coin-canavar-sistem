@@ -1,30 +1,40 @@
 {
-    "last_update": "2026-08-16 19:43:41",
+    "last_update": "2026-08-16 19:53:32",
     "coins": [
         {
             "symbol": "BTCUSDT",
             "base": "BTC",
-            "price": 63216.11,
+            "price": 63130.0,
             "rsi": 50.0,
-            "price_change": 0.16,
+            "price_change": 0.01,
             "volume_change": 0.0,
-            "score": 0.16,
+            "score": 0.01,
             "position": "Long"
         },
         {
             "symbol": "ETHUSDT",
             "base": "ETH",
-            "price": 1887.16,
+            "price": 1885.5,
             "rsi": 50.0,
-            "price_change": 0.15,
+            "price_change": 0.04,
             "volume_change": 0.0,
-            "score": 0.15,
+            "score": 0.04,
             "position": "Long"
         },
         {
             "symbol": "BNBUSDT",
             "base": "BNB",
-            "price": 606.18,
+            "price": 605.75,
+            "rsi": 50.0,
+            "price_change": -0.92,
+            "volume_change": 0.0,
+            "score": 0.92,
+            "position": "Short"
+        },
+        {
+            "symbol": "NEOUSDT",
+            "base": "NEO",
+            "price": 1.67,
             "rsi": 50.0,
             "price_change": -0.65,
             "volume_change": 0.0,
@@ -32,23 +42,13 @@
             "position": "Short"
         },
         {
-            "symbol": "NEOUSDT",
-            "base": "NEO",
-            "price": 1.68,
-            "rsi": 50.0,
-            "price_change": -0.47,
-            "volume_change": 0.0,
-            "score": 0.47,
-            "position": "Short"
-        },
-        {
             "symbol": "LTCUSDT",
             "base": "LTC",
-            "price": 44.56,
+            "price": 44.57,
             "rsi": 50.0,
-            "price_change": 0.68,
+            "price_change": 0.72,
             "volume_change": 0.0,
-            "score": 0.68,
+            "score": 0.72,
             "position": "Long"
         },
         {
@@ -66,9 +66,9 @@
             "base": "ADA",
             "price": 0.1787,
             "rsi": 50.0,
-            "price_change": 0.51,
+            "price_change": 0.45,
             "volume_change": 0.0,
-            "score": 0.51,
+            "score": 0.45,
             "position": "Long"
         },
         {
@@ -76,9 +76,9 @@
             "base": "XRP",
             "price": 1.0,
             "rsi": 50.0,
-            "price_change": -0.16,
+            "price_change": -0.3,
             "volume_change": 0.0,
-            "score": 0.16,
+            "score": 0.3,
             "position": "Short"
         },
         {
@@ -96,29 +96,29 @@
             "base": "IOTA",
             "price": 0.032,
             "rsi": 50.0,
-            "price_change": -2.44,
+            "price_change": -2.74,
             "volume_change": 0.0,
-            "score": 2.44,
+            "score": 2.74,
             "position": "Short"
         },
         {
             "symbol": "XLMUSDT",
             "base": "XLM",
-            "price": 0.1579,
+            "price": 0.1577,
             "rsi": 50.0,
-            "price_change": 0.06,
+            "price_change": -0.25,
             "volume_change": 0.0,
-            "score": 0.06,
-            "position": "Long"
+            "score": 0.25,
+            "position": "Short"
         },
         {
             "symbol": "ONTUSDT",
             "base": "ONT",
-            "price": 0.03943,
+            "price": 0.03932,
             "rsi": 50.0,
-            "price_change": 7.41,
+            "price_change": 6.79,
             "volume_change": 0.0,
-            "score": 7.41,
+            "score": 6.79,
             "position": "Long"
         },
         {
@@ -126,19 +126,19 @@
             "base": "TRX",
             "price": 0.3318,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": 0.06,
             "volume_change": 0.0,
-            "score": 0.0,
-            "position": "Short"
+            "score": 0.06,
+            "position": "Long"
         },
         {
             "symbol": "ETCUSDT",
             "base": "ETC",
-            "price": 6.19,
+            "price": 6.18,
             "rsi": 50.0,
-            "price_change": -1.12,
+            "price_change": -1.28,
             "volume_change": 0.0,
-            "score": 1.12,
+            "score": 1.28,
             "position": "Short"
         },
         {
@@ -154,11 +154,11 @@
         {
             "symbol": "VETUSDT",
             "base": "VET",
-            "price": 0.004407,
+            "price": 0.004402,
             "rsi": 50.0,
-            "price_change": -2.37,
+            "price_change": -2.55,
             "volume_change": 0.0,
-            "score": 2.37,
+            "score": 2.55,
             "position": "Short"
         },
         {
@@ -176,19 +176,19 @@
             "base": "LINK",
             "price": 9.45,
             "rsi": 50.0,
-            "price_change": -1.53,
+            "price_change": -1.3,
             "volume_change": 0.0,
-            "score": 1.53,
+            "score": 1.3,
             "position": "Short"
         },
         {
             "symbol": "ONGUSDT",
             "base": "ONG",
-            "price": 0.0524,
+            "price": 0.05244,
             "rsi": 50.0,
-            "price_change": 8.15,
+            "price_change": 8.35,
             "volume_change": 0.0,
-            "score": 8.15,
+            "score": 8.35,
             "position": "Long"
         },
         {
@@ -196,39 +196,39 @@
             "base": "HOT",
             "price": 0.000329,
             "rsi": 50.0,
-            "price_change": 0.61,
+            "price_change": 1.23,
             "volume_change": 0.0,
-            "score": 0.61,
+            "score": 1.23,
             "position": "Long"
         },
         {
             "symbol": "ZILUSDT",
             "base": "ZIL",
-            "price": 0.002277,
+            "price": 0.002278,
             "rsi": 50.0,
-            "price_change": -2.32,
+            "price_change": -2.36,
             "volume_change": 0.0,
-            "score": 2.32,
+            "score": 2.36,
             "position": "Short"
         },
         {
             "symbol": "ZRXUSDT",
             "base": "ZRX",
-            "price": 0.0763,
+            "price": 0.0761,
             "rsi": 50.0,
-            "price_change": -1.17,
+            "price_change": -1.43,
             "volume_change": 0.0,
-            "score": 1.17,
+            "score": 1.43,
             "position": "Short"
         },
         {
             "symbol": "FETUSDT",
             "base": "FET",
-            "price": 0.1251,
+            "price": 0.1247,
             "rsi": 50.0,
-            "price_change": -2.49,
+            "price_change": -2.96,
             "volume_change": 0.0,
-            "score": 2.49,
+            "score": 2.96,
             "position": "Short"
         },
         {
@@ -236,69 +236,69 @@
             "base": "BAT",
             "price": 0.0598,
             "rsi": 50.0,
-            "price_change": 2.05,
+            "price_change": 1.87,
             "volume_change": 0.0,
-            "score": 2.05,
+            "score": 1.87,
             "position": "Long"
         },
         {
             "symbol": "ZECUSDT",
             "base": "ZEC",
-            "price": 491.51,
+            "price": 491.28,
             "rsi": 50.0,
-            "price_change": 0.29,
+            "price_change": 0.19,
             "volume_change": 0.0,
-            "score": 0.29,
+            "score": 0.19,
             "position": "Long"
         },
         {
             "symbol": "IOSTUSDT",
             "base": "IOST",
-            "price": 0.000557,
+            "price": 0.000555,
             "rsi": 50.0,
-            "price_change": -1.59,
+            "price_change": -1.77,
             "volume_change": 0.0,
-            "score": 1.59,
+            "score": 1.77,
             "position": "Short"
         },
         {
             "symbol": "CELRUSDT",
             "base": "CELR",
-            "price": 0.002059,
+            "price": 0.002062,
             "rsi": 50.0,
-            "price_change": -3.42,
+            "price_change": -2.96,
             "volume_change": 0.0,
-            "score": 3.42,
+            "score": 2.96,
             "position": "Short"
         },
         {
             "symbol": "DASHUSDT",
             "base": "DASH",
-            "price": 30.19,
+            "price": 30.15,
             "rsi": 50.0,
-            "price_change": 0.57,
+            "price_change": 0.27,
             "volume_change": 0.0,
-            "score": 0.57,
+            "score": 0.27,
             "position": "Long"
         },
         {
             "symbol": "THETAUSDT",
             "base": "THETA",
-            "price": 0.1382,
+            "price": 0.1379,
             "rsi": 50.0,
-            "price_change": 0.07,
+            "price_change": -0.07,
             "volume_change": 0.0,
             "score": 0.07,
-            "position": "Long"
+            "position": "Short"
         },
         {
             "symbol": "ENJUSDT",
             "base": "ENJ",
-            "price": 0.02391,
+            "price": 0.0239,
             "rsi": 50.0,
-            "price_change": -0.83,
+            "price_change": -0.79,
             "volume_change": 0.0,
-            "score": 0.83,
+            "score": 0.79,
             "position": "Short"
         },
         {
@@ -306,59 +306,59 @@
             "base": "ATOM",
             "price": 1.47,
             "rsi": 50.0,
-            "price_change": -0.27,
+            "price_change": -0.54,
             "volume_change": 0.0,
-            "score": 0.27,
+            "score": 0.54,
             "position": "Short"
         },
         {
             "symbol": "TFUELUSDT",
             "base": "TFUEL",
-            "price": 0.00725,
+            "price": 0.00728,
             "rsi": 50.0,
-            "price_change": -0.69,
+            "price_change": 0.14,
             "volume_change": 0.0,
-            "score": 0.69,
-            "position": "Short"
+            "score": 0.14,
+            "position": "Long"
         },
         {
             "symbol": "ONEUSDT",
             "base": "ONE",
-            "price": 0.00076,
+            "price": 0.00075,
             "rsi": 50.0,
-            "price_change": 4.11,
+            "price_change": 2.74,
             "volume_change": 0.0,
-            "score": 4.11,
+            "score": 2.74,
             "position": "Long"
         },
         {
             "symbol": "ALGOUSDT",
             "base": "ALGO",
-            "price": 0.0788,
+            "price": 0.0789,
             "rsi": 50.0,
-            "price_change": -1.13,
+            "price_change": -1.0,
             "volume_change": 0.0,
-            "score": 1.13,
+            "score": 1.0,
             "position": "Short"
         },
         {
             "symbol": "DOGEUSDT",
             "base": "DOGE",
-            "price": 0.07004,
+            "price": 0.06995,
             "rsi": 50.0,
-            "price_change": 0.11,
+            "price_change": 0.01,
             "volume_change": 0.0,
-            "score": 0.11,
+            "score": 0.01,
             "position": "Long"
         },
         {
             "symbol": "DUSKUSDT",
             "base": "DUSK",
-            "price": 0.0715,
+            "price": 0.0713,
             "rsi": 50.0,
-            "price_change": 10.0,
+            "price_change": 9.86,
             "volume_change": 0.0,
-            "score": 10.0,
+            "score": 9.86,
             "position": "Long"
         },
         {
@@ -366,19 +366,19 @@
             "base": "ANKR",
             "price": 0.0034,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": 0.29,
             "volume_change": 0.0,
-            "score": 0.0,
-            "position": "Short"
+            "score": 0.29,
+            "position": "Long"
         },
         {
             "symbol": "WINUSDT",
             "base": "WIN",
             "price": 3e-05,
             "rsi": 50.0,
-            "price_change": -0.46,
+            "price_change": -0.52,
             "volume_change": 0.0,
-            "score": 0.46,
+            "score": 0.52,
             "position": "Short"
         },
         {
@@ -394,71 +394,71 @@
         {
             "symbol": "CVCUSDT",
             "base": "CVC",
-            "price": 0.01733,
+            "price": 0.01731,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": -0.12,
             "volume_change": 0.0,
-            "score": 0.0,
+            "score": 0.12,
             "position": "Short"
         },
         {
             "symbol": "CHZUSDT",
             "base": "CHZ",
-            "price": 0.01251,
+            "price": 0.01247,
             "rsi": 50.0,
-            "price_change": -0.4,
+            "price_change": -0.72,
             "volume_change": 0.0,
-            "score": 0.4,
+            "score": 0.72,
             "position": "Short"
         },
         {
             "symbol": "BANDUSDT",
             "base": "BAND",
-            "price": 0.1529,
+            "price": 0.1526,
             "rsi": 50.0,
-            "price_change": -1.92,
+            "price_change": -2.05,
             "volume_change": 0.0,
-            "score": 1.92,
+            "score": 2.05,
             "position": "Short"
         },
         {
             "symbol": "XTZUSDT",
             "base": "XTZ",
-            "price": 0.1974,
+            "price": 0.1972,
             "rsi": 50.0,
-            "price_change": -0.95,
+            "price_change": -1.1,
             "volume_change": 0.0,
-            "score": 0.95,
+            "score": 1.1,
             "position": "Short"
         },
         {
             "symbol": "RVNUSDT",
             "base": "RVN",
-            "price": 0.00285,
+            "price": 0.00287,
             "rsi": 50.0,
-            "price_change": 1.79,
+            "price_change": 2.87,
             "volume_change": 0.0,
-            "score": 1.79,
+            "score": 2.87,
             "position": "Long"
         },
         {
             "symbol": "HBARUSDT",
             "base": "HBAR",
-            "price": 0.06526,
+            "price": 0.06522,
             "rsi": 50.0,
-            "price_change": -0.76,
+            "price_change": -0.93,
             "volume_change": 0.0,
-            "score": 0.76,
+            "score": 0.93,
             "position": "Short"
         },
         {
             "symbol": "STXUSDT",
             "base": "STX",
-            "price": 0.1226,
+            "price": 0.1224,
             "rsi": 50.0,
-            "price_change": -0.57,
+            "price_change": -0.73,
             "volume_change": 0.0,
-            "score": 0.57,
+            "score": 0.73,
             "position": "Short"
         },
         {
@@ -474,17 +474,37 @@
         {
             "symbol": "ARPAUSDT",
             "base": "ARPA",
-            "price": 0.00888,
+            "price": 0.00881,
             "rsi": 50.0,
-            "price_change": 3.14,
+            "price_change": 2.32,
             "volume_change": 0.0,
-            "score": 3.14,
+            "score": 2.32,
             "position": "Long"
         },
         {
             "symbol": "IOTXUSDT",
             "base": "IOTX",
-            "price": 0.00259,
+            "price": 0.0026,
+            "rsi": 50.0,
+            "price_change": 0.39,
+            "volume_change": 0.0,
+            "score": 0.39,
+            "position": "Long"
+        },
+        {
+            "symbol": "RLCUSDT",
+            "base": "RLC",
+            "price": 0.285,
+            "rsi": 50.0,
+            "price_change": 0.85,
+            "volume_change": 0.0,
+            "score": 0.85,
+            "position": "Long"
+        },
+        {
+            "symbol": "BCHUSDT",
+            "base": "BCH",
+            "price": 203.9,
             "rsi": 50.0,
             "price_change": 0.0,
             "volume_change": 0.0,
@@ -492,33 +512,13 @@
             "position": "Short"
         },
         {
-            "symbol": "RLCUSDT",
-            "base": "RLC",
-            "price": 0.285,
-            "rsi": 50.0,
-            "price_change": 0.35,
-            "volume_change": 0.0,
-            "score": 0.35,
-            "position": "Long"
-        },
-        {
-            "symbol": "BCHUSDT",
-            "base": "BCH",
-            "price": 204.0,
-            "rsi": 50.0,
-            "price_change": 0.15,
-            "volume_change": 0.0,
-            "score": 0.15,
-            "position": "Long"
-        },
-        {
             "symbol": "FTTUSDT",
             "base": "FTT",
-            "price": 0.209,
+            "price": 0.2091,
             "rsi": 50.0,
-            "price_change": 1.16,
+            "price_change": 1.31,
             "volume_change": 0.0,
-            "score": 1.16,
+            "score": 1.31,
             "position": "Long"
         },
         {
@@ -526,29 +526,29 @@
             "base": "EUR",
             "price": 1.16,
             "rsi": 50.0,
-            "price_change": -0.01,
+            "price_change": 0.01,
             "volume_change": 0.0,
             "score": 0.01,
-            "position": "Short"
+            "position": "Long"
         },
         {
             "symbol": "OGNUSDT",
             "base": "OGN",
-            "price": 0.01639,
+            "price": 0.01638,
             "rsi": 50.0,
-            "price_change": 0.55,
+            "price_change": 0.37,
             "volume_change": 0.0,
-            "score": 0.55,
+            "score": 0.37,
             "position": "Long"
         },
         {
             "symbol": "LSKUSDT",
             "base": "LSK",
-            "price": 0.0787,
+            "price": 0.0785,
             "rsi": 50.0,
-            "price_change": 3.42,
+            "price_change": 3.02,
             "volume_change": 0.0,
-            "score": 3.42,
+            "score": 3.02,
             "position": "Long"
         },
         {
@@ -564,31 +564,31 @@
         {
             "symbol": "MBLUSDT",
             "base": "MBL",
-            "price": 0.000582,
+            "price": 0.00058,
             "rsi": 50.0,
-            "price_change": -0.85,
+            "price_change": -1.19,
             "volume_change": 0.0,
-            "score": 0.85,
+            "score": 1.19,
             "position": "Short"
         },
         {
             "symbol": "COTIUSDT",
             "base": "COTI",
-            "price": 0.01052,
+            "price": 0.01054,
             "rsi": 50.0,
-            "price_change": 1.84,
+            "price_change": 2.03,
             "volume_change": 0.0,
-            "score": 1.84,
+            "score": 2.03,
             "position": "Long"
         },
         {
             "symbol": "SOLUSDT",
             "base": "SOL",
-            "price": 75.32,
+            "price": 75.23,
             "rsi": 50.0,
-            "price_change": -0.29,
+            "price_change": -0.44,
             "volume_change": 0.0,
-            "score": 0.29,
+            "score": 0.44,
             "position": "Short"
         },
         {
@@ -596,9 +596,9 @@
             "base": "CTSI",
             "price": 0.02494,
             "rsi": 50.0,
-            "price_change": -0.72,
+            "price_change": -0.68,
             "volume_change": 0.0,
-            "score": 0.72,
+            "score": 0.68,
             "position": "Short"
         },
         {
@@ -624,42 +624,42 @@
         {
             "symbol": "KNCUSDT",
             "base": "KNC",
-            "price": 0.1007,
+            "price": 0.1009,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": 0.2,
             "volume_change": 0.0,
-            "score": 0.0,
-            "position": "Short"
+            "score": 0.2,
+            "position": "Long"
         },
         {
             "symbol": "COMPUSDT",
             "base": "COMP",
-            "price": 16.19,
+            "price": 16.18,
             "rsi": 50.0,
-            "price_change": -0.18,
+            "price_change": -0.25,
             "volume_change": 0.0,
-            "score": 0.18,
+            "score": 0.25,
             "position": "Short"
         },
         {
             "symbol": "SCUSDT",
             "base": "SC",
-            "price": 0.000465,
+            "price": 0.000466,
             "rsi": 50.0,
-            "price_change": 1.09,
+            "price_change": 1.08,
             "volume_change": 0.0,
-            "score": 1.09,
+            "score": 1.08,
             "position": "Long"
         },
         {
             "symbol": "ZENUSDT",
             "base": "ZEN",
-            "price": 4.0,
+            "price": 4.03,
             "rsi": 50.0,
-            "price_change": -0.17,
+            "price_change": 0.55,
             "volume_change": 0.0,
-            "score": 0.17,
-            "position": "Short"
+            "score": 0.55,
+            "position": "Long"
         },
         {
             "symbol": "SNXUSDT",
@@ -684,31 +684,31 @@
         {
             "symbol": "DGBUSDT",
             "base": "DGB",
-            "price": 0.00423,
+            "price": 0.00418,
             "rsi": 50.0,
-            "price_change": 6.28,
+            "price_change": 5.03,
             "volume_change": 0.0,
-            "score": 6.28,
+            "score": 5.03,
             "position": "Long"
         },
         {
             "symbol": "DCRUSDT",
             "base": "DCR",
-            "price": 12.01,
+            "price": 11.99,
             "rsi": 50.0,
-            "price_change": -0.58,
+            "price_change": -0.74,
             "volume_change": 0.0,
-            "score": 0.58,
+            "score": 0.74,
             "position": "Short"
         },
         {
             "symbol": "STORJUSDT",
             "base": "STORJ",
-            "price": 0.0418,
+            "price": 0.0417,
             "rsi": 50.0,
-            "price_change": -4.35,
+            "price_change": -4.14,
             "volume_change": 0.0,
-            "score": 4.35,
+            "score": 4.14,
             "position": "Short"
         },
         {
@@ -726,9 +726,9 @@
             "base": "YFI",
             "price": 1960.0,
             "rsi": 50.0,
-            "price_change": -0.1,
+            "price_change": 0.0,
             "volume_change": 0.0,
-            "score": 0.1,
+            "score": 0.0,
             "position": "Short"
         },
         {
@@ -736,29 +736,29 @@
             "base": "JST",
             "price": 0.10856,
             "rsi": 50.0,
-            "price_change": 2.19,
+            "price_change": 2.21,
             "volume_change": 0.0,
-            "score": 2.19,
+            "score": 2.21,
             "position": "Long"
         },
         {
             "symbol": "CRVUSDT",
             "base": "CRV",
-            "price": 0.2519,
+            "price": 0.2514,
             "rsi": 50.0,
-            "price_change": 4.92,
+            "price_change": 4.58,
             "volume_change": 0.0,
-            "score": 4.92,
+            "score": 4.58,
             "position": "Long"
         },
         {
             "symbol": "SANDUSDT",
             "base": "SAND",
-            "price": 0.0397,
+            "price": 0.03967,
             "rsi": 50.0,
-            "price_change": -0.38,
+            "price_change": -0.63,
             "volume_change": 0.0,
-            "score": 0.38,
+            "score": 0.63,
             "position": "Short"
         },
         {
@@ -774,11 +774,11 @@
         {
             "symbol": "DOTUSDT",
             "base": "DOT",
-            "price": 0.766,
+            "price": 0.764,
             "rsi": 50.0,
-            "price_change": -0.26,
+            "price_change": -0.65,
             "volume_change": 0.0,
-            "score": 0.26,
+            "score": 0.65,
             "position": "Short"
         },
         {
@@ -786,15 +786,15 @@
             "base": "LUNA",
             "price": 0.0426,
             "rsi": 50.0,
-            "price_change": -0.7,
+            "price_change": -0.47,
             "volume_change": 0.0,
-            "score": 0.7,
+            "score": 0.47,
             "position": "Short"
         },
         {
             "symbol": "RSRUSDT",
             "base": "RSR",
-            "price": 0.001154,
+            "price": 0.001153,
             "rsi": 50.0,
             "price_change": -0.17,
             "volume_change": 0.0,
@@ -804,21 +804,21 @@
         {
             "symbol": "PAXGUSDT",
             "base": "PAXG",
-            "price": 4377.45,
+            "price": 4378.43,
             "rsi": 50.0,
-            "price_change": -0.01,
+            "price_change": 0.01,
             "volume_change": 0.0,
             "score": 0.01,
-            "position": "Short"
+            "position": "Long"
         },
         {
             "symbol": "TRBUSDT",
             "base": "TRB",
-            "price": 13.06,
+            "price": 13.05,
             "rsi": 50.0,
-            "price_change": -1.43,
+            "price_change": -1.44,
             "volume_change": 0.0,
-            "score": 1.43,
+            "score": 1.44,
             "position": "Short"
         },
         {
@@ -826,10 +826,10 @@
             "base": "SUSHI",
             "price": 0.1602,
             "rsi": 50.0,
-            "price_change": 0.06,
+            "price_change": 0.0,
             "volume_change": 0.0,
-            "score": 0.06,
-            "position": "Long"
+            "score": 0.0,
+            "position": "Short"
         },
         {
             "symbol": "KSMUSDT",
@@ -846,15 +846,15 @@
             "base": "EGLD",
             "price": 2.65,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": -0.38,
             "volume_change": 0.0,
-            "score": 0.0,
+            "score": 0.38,
             "position": "Short"
         },
         {
             "symbol": "DIAUSDT",
             "base": "DIA",
-            "price": 0.1229,
+            "price": 0.1231,
             "rsi": 50.0,
             "price_change": -2.38,
             "volume_change": 0.0,
@@ -884,11 +884,11 @@
         {
             "symbol": "BELUSDT",
             "base": "BEL",
-            "price": 0.1261,
+            "price": 0.1258,
             "rsi": 50.0,
-            "price_change": 17.96,
+            "price_change": 17.79,
             "volume_change": 0.0,
-            "score": 17.96,
+            "score": 17.79,
             "position": "Long"
         },
         {
@@ -896,9 +896,9 @@
             "base": "UNI",
             "price": 3.31,
             "rsi": 50.0,
-            "price_change": 2.03,
+            "price_change": 2.0,
             "volume_change": 0.0,
-            "score": 2.03,
+            "score": 2.0,
             "position": "Long"
         },
         {
@@ -906,9 +906,9 @@
             "base": "SUN",
             "price": 0.01786,
             "rsi": 50.0,
-            "price_change": -0.67,
+            "price_change": -0.72,
             "volume_change": 0.0,
-            "score": 0.67,
+            "score": 0.72,
             "position": "Short"
         },
         {
@@ -916,9 +916,9 @@
             "base": "AVAX",
             "price": 6.35,
             "rsi": 50.0,
-            "price_change": -2.38,
+            "price_change": -2.52,
             "volume_change": 0.0,
-            "score": 2.38,
+            "score": 2.52,
             "position": "Short"
         },
         {
@@ -934,11 +934,11 @@
         {
             "symbol": "AAVEUSDT",
             "base": "AAVE",
-            "price": 86.88,
+            "price": 86.85,
             "rsi": 50.0,
-            "price_change": 0.3,
+            "price_change": 0.14,
             "volume_change": 0.0,
-            "score": 0.3,
+            "score": 0.14,
             "position": "Long"
         },
         {
@@ -946,9 +946,9 @@
             "base": "NEAR",
             "price": 1.61,
             "rsi": 50.0,
-            "price_change": -1.65,
+            "price_change": -1.71,
             "volume_change": 0.0,
-            "score": 1.65,
+            "score": 1.71,
             "position": "Short"
         },
         {
@@ -956,9 +956,9 @@
             "base": "FIL",
             "price": 0.6806,
             "rsi": 50.0,
-            "price_change": -0.95,
+            "price_change": -0.99,
             "volume_change": 0.0,
-            "score": 0.95,
+            "score": 0.99,
             "position": "Short"
         },
         {
@@ -966,9 +966,9 @@
             "base": "INJ",
             "price": 4.11,
             "rsi": 50.0,
-            "price_change": -1.91,
+            "price_change": -2.0,
             "volume_change": 0.0,
-            "score": 1.91,
+            "score": 2.0,
             "position": "Short"
         },
         {
@@ -976,39 +976,39 @@
             "base": "AUDIO",
             "price": 0.01195,
             "rsi": 50.0,
-            "price_change": -0.25,
+            "price_change": -0.17,
             "volume_change": 0.0,
-            "score": 0.25,
+            "score": 0.17,
             "position": "Short"
         },
         {
             "symbol": "CTKUSDT",
             "base": "CTK",
-            "price": 0.1097,
+            "price": 0.1102,
             "rsi": 50.0,
-            "price_change": 2.24,
+            "price_change": 2.8,
             "volume_change": 0.0,
-            "score": 2.24,
+            "score": 2.8,
             "position": "Long"
         },
         {
             "symbol": "AXSUSDT",
             "base": "AXS",
-            "price": 0.879,
+            "price": 0.878,
             "rsi": 50.0,
-            "price_change": 0.46,
+            "price_change": 0.34,
             "volume_change": 0.0,
-            "score": 0.46,
+            "score": 0.34,
             "position": "Long"
         },
         {
             "symbol": "STRAXUSDT",
             "base": "STRAX",
-            "price": 0.0084,
+            "price": 0.00841,
             "rsi": 50.0,
-            "price_change": -0.47,
+            "price_change": -0.24,
             "volume_change": 0.0,
-            "score": 0.47,
+            "score": 0.24,
             "position": "Short"
         },
         {
@@ -1024,7 +1024,7 @@
         {
             "symbol": "AVAUSDT",
             "base": "AVA",
-            "price": 0.1767,
+            "price": 0.1763,
             "rsi": 50.0,
             "price_change": -2.16,
             "volume_change": 0.0,
@@ -1034,7 +1034,7 @@
         {
             "symbol": "SKLUSDT",
             "base": "SKL",
-            "price": 0.00342,
+            "price": 0.00343,
             "rsi": 50.0,
             "price_change": -0.58,
             "volume_change": 0.0,
@@ -1044,21 +1044,21 @@
         {
             "symbol": "GRTUSDT",
             "base": "GRT",
-            "price": 0.01352,
+            "price": 0.01351,
             "rsi": 50.0,
-            "price_change": -0.07,
+            "price_change": -0.15,
             "volume_change": 0.0,
-            "score": 0.07,
+            "score": 0.15,
             "position": "Short"
         },
         {
             "symbol": "JUVUSDT",
             "base": "JUV",
-            "price": 0.305,
+            "price": 0.303,
             "rsi": 50.0,
-            "price_change": -0.33,
+            "price_change": -0.66,
             "volume_change": 0.0,
-            "score": 0.33,
+            "score": 0.66,
             "position": "Short"
         },
         {
@@ -1086,9 +1086,9 @@
             "base": "OG",
             "price": 2.52,
             "rsi": 50.0,
-            "price_change": -0.79,
+            "price_change": -1.02,
             "volume_change": 0.0,
-            "score": 0.79,
+            "score": 1.02,
             "position": "Short"
         },
         {
@@ -1096,9 +1096,9 @@
             "base": "ATM",
             "price": 1.5,
             "rsi": 50.0,
-            "price_change": -0.79,
+            "price_change": -0.66,
             "volume_change": 0.0,
-            "score": 0.79,
+            "score": 0.66,
             "position": "Short"
         },
         {
@@ -1114,11 +1114,11 @@
         {
             "symbol": "CELOUSDT",
             "base": "CELO",
-            "price": 0.06034,
+            "price": 0.06027,
             "rsi": 50.0,
-            "price_change": -0.38,
+            "price_change": -0.53,
             "volume_change": 0.0,
-            "score": 0.38,
+            "score": 0.53,
             "position": "Short"
         },
         {
@@ -1126,49 +1126,49 @@
             "base": "RIF",
             "price": 0.0706,
             "rsi": 50.0,
-            "price_change": 1.29,
+            "price_change": 1.15,
             "volume_change": 0.0,
-            "score": 1.29,
+            "score": 1.15,
             "position": "Long"
         },
         {
             "symbol": "CKBUSDT",
             "base": "CKB",
-            "price": 0.00083,
+            "price": 0.000831,
             "rsi": 50.0,
-            "price_change": -0.95,
+            "price_change": -0.72,
             "volume_change": 0.0,
-            "score": 0.95,
+            "score": 0.72,
             "position": "Short"
         },
         {
             "symbol": "TWTUSDT",
             "base": "TWT",
-            "price": 0.3955,
+            "price": 0.395,
             "rsi": 50.0,
-            "price_change": 0.64,
+            "price_change": 0.71,
             "volume_change": 0.0,
-            "score": 0.64,
+            "score": 0.71,
             "position": "Long"
         },
         {
             "symbol": "SFPUSDT",
             "base": "SFP",
-            "price": 0.2345,
+            "price": 0.2344,
             "rsi": 50.0,
-            "price_change": -0.59,
+            "price_change": -1.22,
             "volume_change": 0.0,
-            "score": 0.59,
+            "score": 1.22,
             "position": "Short"
         },
         {
             "symbol": "DODOUSDT",
             "base": "DODO",
-            "price": 0.02157,
+            "price": 0.02186,
             "rsi": 50.0,
-            "price_change": 4.56,
+            "price_change": 6.01,
             "volume_change": 0.0,
-            "score": 4.56,
+            "score": 6.01,
             "position": "Long"
         },
         {
@@ -1176,9 +1176,9 @@
             "base": "CAKE",
             "price": 1.46,
             "rsi": 50.0,
-            "price_change": 1.75,
+            "price_change": 1.6,
             "volume_change": 0.0,
-            "score": 1.75,
+            "score": 1.6,
             "position": "Long"
         },
         {
@@ -1186,69 +1186,69 @@
             "base": "ACM",
             "price": 0.266,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": -0.38,
             "volume_change": 0.0,
-            "score": 0.0,
+            "score": 0.38,
             "position": "Short"
         },
         {
             "symbol": "ALICEUSDT",
             "base": "ALICE",
-            "price": 0.1399,
+            "price": 0.139,
             "rsi": 50.0,
-            "price_change": 12.46,
+            "price_change": 12.01,
             "volume_change": 0.0,
-            "score": 12.46,
+            "score": 12.01,
             "position": "Long"
         },
         {
             "symbol": "SUPERUSDT",
             "base": "SUPER",
-            "price": 0.0865,
+            "price": 0.0864,
             "rsi": 50.0,
-            "price_change": 1.05,
+            "price_change": 0.94,
             "volume_change": 0.0,
-            "score": 1.05,
+            "score": 0.94,
             "position": "Long"
         },
         {
             "symbol": "CFXUSDT",
             "base": "CFX",
-            "price": 0.0421,
+            "price": 0.04205,
             "rsi": 50.0,
-            "price_change": -0.78,
+            "price_change": -0.94,
             "volume_change": 0.0,
-            "score": 0.78,
+            "score": 0.94,
             "position": "Short"
         },
         {
             "symbol": "TKOUSDT",
             "base": "TKO",
-            "price": 0.052,
+            "price": 0.0519,
             "rsi": 50.0,
-            "price_change": 0.19,
+            "price_change": -0.38,
             "volume_change": 0.0,
-            "score": 0.19,
-            "position": "Long"
+            "score": 0.38,
+            "position": "Short"
         },
         {
             "symbol": "PUNDIXUSDT",
             "base": "PUNDIX",
-            "price": 0.075,
+            "price": 0.0744,
             "rsi": 50.0,
-            "price_change": 1.49,
+            "price_change": 0.68,
             "volume_change": 0.0,
-            "score": 1.49,
+            "score": 0.68,
             "position": "Long"
         },
         {
             "symbol": "TLMUSDT",
             "base": "TLM",
-            "price": 0.001589,
+            "price": 0.001588,
             "rsi": 50.0,
-            "price_change": 0.13,
+            "price_change": 0.06,
             "volume_change": 0.0,
-            "score": 0.13,
+            "score": 0.06,
             "position": "Long"
         },
         {
@@ -1264,11 +1264,11 @@
         {
             "symbol": "SLPUSDT",
             "base": "SLP",
-            "price": 0.000529,
+            "price": 0.00053,
             "rsi": 50.0,
-            "price_change": -2.4,
+            "price_change": -1.85,
             "volume_change": 0.0,
-            "score": 2.4,
+            "score": 1.85,
             "position": "Short"
         },
         {
@@ -1276,9 +1276,9 @@
             "base": "SHIB",
             "price": 4e-06,
             "rsi": 50.0,
-            "price_change": -1.54,
+            "price_change": -1.76,
             "volume_change": 0.0,
-            "score": 1.54,
+            "score": 1.76,
             "position": "Short"
         },
         {
@@ -1286,9 +1286,9 @@
             "base": "ICP",
             "price": 2.27,
             "rsi": 50.0,
-            "price_change": 0.35,
+            "price_change": 0.31,
             "volume_change": 0.0,
-            "score": 0.35,
+            "score": 0.31,
             "position": "Long"
         },
         {
@@ -1296,9 +1296,9 @@
             "base": "AR",
             "price": 1.8,
             "rsi": 50.0,
-            "price_change": 0.9,
+            "price_change": 0.84,
             "volume_change": 0.0,
-            "score": 0.9,
+            "score": 0.84,
             "position": "Long"
         },
         {
@@ -1316,15 +1316,15 @@
             "base": "LPT",
             "price": 1.2,
             "rsi": 50.0,
-            "price_change": -0.08,
+            "price_change": -0.25,
             "volume_change": 0.0,
-            "score": 0.08,
+            "score": 0.25,
             "position": "Short"
         },
         {
             "symbol": "XVGUSDT",
             "base": "XVG",
-            "price": 0.002053,
+            "price": 0.002054,
             "rsi": 50.0,
             "price_change": -1.68,
             "volume_change": 0.0,
@@ -1336,10 +1336,10 @@
             "base": "GTC",
             "price": 0.08611,
             "rsi": 50.0,
-            "price_change": -0.08,
+            "price_change": 0.1,
             "volume_change": 0.0,
-            "score": 0.08,
-            "position": "Short"
+            "score": 0.1,
+            "position": "Long"
         },
         {
             "symbol": "PHAUSDT",
@@ -1354,11 +1354,11 @@
         {
             "symbol": "DEXEUSDT",
             "base": "DEXE",
-            "price": 1.83,
+            "price": 1.82,
             "rsi": 50.0,
-            "price_change": -6.93,
+            "price_change": -6.65,
             "volume_change": 0.0,
-            "score": 6.93,
+            "score": 6.65,
             "position": "Short"
         },
         {
@@ -1366,29 +1366,29 @@
             "base": "C98",
             "price": 0.0145,
             "rsi": 50.0,
-            "price_change": -1.23,
+            "price_change": -1.43,
             "volume_change": 0.0,
-            "score": 1.23,
+            "score": 1.43,
             "position": "Short"
         },
         {
             "symbol": "QNTUSDT",
             "base": "QNT",
-            "price": 57.27,
+            "price": 57.22,
             "rsi": 50.0,
-            "price_change": -0.85,
+            "price_change": -0.97,
             "volume_change": 0.0,
-            "score": 0.85,
+            "score": 0.97,
             "position": "Short"
         },
         {
             "symbol": "FLOWUSDT",
             "base": "FLOW",
-            "price": 0.03005,
+            "price": 0.03008,
             "rsi": 50.0,
-            "price_change": -3.1,
+            "price_change": -3.09,
             "volume_change": 0.0,
-            "score": 3.1,
+            "score": 3.09,
             "position": "Short"
         },
         {
@@ -1404,11 +1404,11 @@
         {
             "symbol": "RAYUSDT",
             "base": "RAY",
-            "price": 0.622,
+            "price": 0.6216,
             "rsi": 50.0,
-            "price_change": -0.03,
+            "price_change": -0.14,
             "volume_change": 0.0,
-            "score": 0.03,
+            "score": 0.14,
             "position": "Short"
         },
         {
@@ -1436,39 +1436,39 @@
             "base": "WAXP",
             "price": 0.00367,
             "rsi": 50.0,
-            "price_change": -0.54,
+            "price_change": -0.27,
             "volume_change": 0.0,
-            "score": 0.54,
+            "score": 0.27,
             "position": "Short"
         },
         {
             "symbol": "GNOUSDT",
             "base": "GNO",
-            "price": 103.54,
+            "price": 103.55,
             "rsi": 50.0,
-            "price_change": -0.15,
+            "price_change": 0.06,
             "volume_change": 0.0,
-            "score": 0.15,
-            "position": "Short"
+            "score": 0.06,
+            "position": "Long"
         },
         {
             "symbol": "XECUSDT",
             "base": "XEC",
             "price": 6e-06,
             "rsi": 50.0,
-            "price_change": -2.6,
+            "price_change": -2.75,
             "volume_change": 0.0,
-            "score": 2.6,
+            "score": 2.75,
             "position": "Short"
         },
         {
             "symbol": "DYDXUSDT",
             "base": "DYDX",
-            "price": 0.10771,
+            "price": 0.10756,
             "rsi": 50.0,
-            "price_change": -3.0,
+            "price_change": -3.1,
             "volume_change": 0.0,
-            "score": 3.0,
+            "score": 3.1,
             "position": "Short"
         },
         {
@@ -1476,35 +1476,35 @@
             "base": "USDP",
             "price": 1.0,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": 0.01,
             "volume_change": 0.0,
-            "score": 0.0,
-            "position": "Short"
+            "score": 0.01,
+            "position": "Long"
         },
         {
             "symbol": "GALAUSDT",
             "base": "GALA",
-            "price": 0.001655,
+            "price": 0.001654,
             "rsi": 50.0,
-            "price_change": -0.42,
+            "price_change": -0.6,
             "volume_change": 0.0,
-            "score": 0.42,
+            "score": 0.6,
             "position": "Short"
         },
         {
             "symbol": "ILVUSDT",
             "base": "ILV",
-            "price": 3.09,
+            "price": 3.1,
             "rsi": 50.0,
-            "price_change": 3.0,
+            "price_change": 3.33,
             "volume_change": 0.0,
-            "score": 3.0,
+            "score": 3.33,
             "position": "Long"
         },
         {
             "symbol": "YGGUSDT",
             "base": "YGG",
-            "price": 0.01987,
+            "price": 0.01989,
             "rsi": 50.0,
             "price_change": -1.39,
             "volume_change": 0.0,
@@ -1514,21 +1514,21 @@
         {
             "symbol": "FIDAUSDT",
             "base": "FIDA",
-            "price": 0.01742,
+            "price": 0.01739,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": -0.17,
             "volume_change": 0.0,
-            "score": 0.0,
+            "score": 0.17,
             "position": "Short"
         },
         {
             "symbol": "AGLDUSDT",
             "base": "AGLD",
-            "price": 0.1573,
+            "price": 0.1571,
             "rsi": 50.0,
-            "price_change": -2.48,
+            "price_change": -2.36,
             "volume_change": 0.0,
-            "score": 2.48,
+            "score": 2.36,
             "position": "Short"
         },
         {
@@ -1536,29 +1536,29 @@
             "base": "RAD",
             "price": 0.227,
             "rsi": 50.0,
-            "price_change": -1.3,
+            "price_change": -1.73,
             "volume_change": 0.0,
-            "score": 1.3,
+            "score": 1.73,
             "position": "Short"
         },
         {
             "symbol": "RAREUSDT",
             "base": "RARE",
-            "price": 0.01226,
+            "price": 0.01217,
             "rsi": 50.0,
-            "price_change": 5.6,
+            "price_change": 5.28,
             "volume_change": 0.0,
-            "score": 5.6,
+            "score": 5.28,
             "position": "Long"
         },
         {
             "symbol": "LAZIOUSDT",
             "base": "LAZIO",
-            "price": 0.346,
+            "price": 0.345,
             "rsi": 50.0,
-            "price_change": -0.57,
+            "price_change": -0.86,
             "volume_change": 0.0,
-            "score": 0.57,
+            "score": 0.86,
             "position": "Short"
         },
         {
@@ -1566,9 +1566,9 @@
             "base": "ADX",
             "price": 0.0628,
             "rsi": 50.0,
-            "price_change": 1.29,
+            "price_change": 1.45,
             "volume_change": 0.0,
-            "score": 1.29,
+            "score": 1.45,
             "position": "Long"
         },
         {
@@ -1576,19 +1576,19 @@
             "base": "AUCTION",
             "price": 2.84,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": -0.04,
             "volume_change": 0.0,
-            "score": 0.0,
+            "score": 0.04,
             "position": "Short"
         },
         {
             "symbol": "MOVRUSDT",
             "base": "MOVR",
-            "price": 0.773,
+            "price": 0.777,
             "rsi": 50.0,
-            "price_change": -6.08,
+            "price_change": -5.59,
             "volume_change": 0.0,
-            "score": 6.08,
+            "score": 5.59,
             "position": "Short"
         },
         {
@@ -1596,29 +1596,29 @@
             "base": "CITY",
             "price": 0.354,
             "rsi": 50.0,
-            "price_change": -0.84,
+            "price_change": -0.56,
             "volume_change": 0.0,
-            "score": 0.84,
+            "score": 0.56,
             "position": "Short"
         },
         {
             "symbol": "ENSUSDT",
             "base": "ENS",
-            "price": 4.03,
+            "price": 4.02,
             "rsi": 50.0,
-            "price_change": -0.74,
+            "price_change": -0.98,
             "volume_change": 0.0,
-            "score": 0.74,
+            "score": 0.98,
             "position": "Short"
         },
         {
             "symbol": "QIUSDT",
             "base": "QI",
-            "price": 0.001334,
+            "price": 0.001333,
             "rsi": 50.0,
-            "price_change": 0.76,
+            "price_change": 0.53,
             "volume_change": 0.0,
-            "score": 0.76,
+            "score": 0.53,
             "position": "Long"
         },
         {
@@ -1626,9 +1626,9 @@
             "base": "PORTO",
             "price": 0.429,
             "rsi": 50.0,
-            "price_change": -1.38,
+            "price_change": -1.15,
             "volume_change": 0.0,
-            "score": 1.38,
+            "score": 1.15,
             "position": "Short"
         },
         {
@@ -1646,9 +1646,9 @@
             "base": "JASMY",
             "price": 0.00384,
             "rsi": 50.0,
-            "price_change": -2.04,
+            "price_change": -1.79,
             "volume_change": 0.0,
-            "score": 2.04,
+            "score": 1.79,
             "position": "Short"
         },
         {
@@ -1664,11 +1664,11 @@
         {
             "symbol": "PYRUSDT",
             "base": "PYR",
-            "price": 0.04,
+            "price": 0.041,
             "rsi": 50.0,
-            "price_change": -18.37,
+            "price_change": -16.33,
             "volume_change": 0.0,
-            "score": 18.37,
+            "score": 16.33,
             "position": "Short"
         },
         {
@@ -1684,17 +1684,17 @@
         {
             "symbol": "BICOUSDT",
             "base": "BICO",
-            "price": 0.02249,
+            "price": 0.02243,
             "rsi": 50.0,
-            "price_change": 8.39,
+            "price_change": 8.83,
             "volume_change": 0.0,
-            "score": 8.39,
+            "score": 8.83,
             "position": "Long"
         },
         {
             "symbol": "FLUXUSDT",
             "base": "FLUX",
-            "price": 0.0401,
+            "price": 0.0402,
             "rsi": 50.0,
             "price_change": -1.47,
             "volume_change": 0.0,
@@ -1706,19 +1706,19 @@
             "base": "CVX",
             "price": 1.65,
             "rsi": 50.0,
-            "price_change": 5.43,
+            "price_change": 5.11,
             "volume_change": 0.0,
-            "score": 5.43,
+            "score": 5.11,
             "position": "Long"
         },
         {
             "symbol": "PEOPLEUSDT",
             "base": "PEOPLE",
-            "price": 0.00746,
+            "price": 0.00743,
             "rsi": 50.0,
-            "price_change": -2.36,
+            "price_change": -2.75,
             "volume_change": 0.0,
-            "score": 2.36,
+            "score": 2.75,
             "position": "Short"
         },
         {
@@ -1726,9 +1726,9 @@
             "base": "SPELL",
             "price": 7.8e-05,
             "rsi": 50.0,
-            "price_change": -1.27,
+            "price_change": -1.39,
             "volume_change": 0.0,
-            "score": 1.27,
+            "score": 1.39,
             "position": "Short"
         },
         {
@@ -1736,39 +1736,39 @@
             "base": "JOE",
             "price": 0.0282,
             "rsi": 50.0,
-            "price_change": -1.74,
+            "price_change": -1.4,
             "volume_change": 0.0,
-            "score": 1.74,
+            "score": 1.4,
             "position": "Short"
         },
         {
             "symbol": "ACHUSDT",
             "base": "ACH",
-            "price": 0.00422,
+            "price": 0.00421,
             "rsi": 50.0,
-            "price_change": -1.17,
+            "price_change": -1.41,
             "volume_change": 0.0,
-            "score": 1.17,
+            "score": 1.41,
             "position": "Short"
         },
         {
             "symbol": "IMXUSDT",
             "base": "IMX",
-            "price": 0.1086,
+            "price": 0.1087,
             "rsi": 50.0,
-            "price_change": -0.82,
+            "price_change": -0.73,
             "volume_change": 0.0,
-            "score": 0.82,
+            "score": 0.73,
             "position": "Short"
         },
         {
             "symbol": "GLMRUSDT",
             "base": "GLMR",
-            "price": 0.007453,
+            "price": 0.007438,
             "rsi": 50.0,
-            "price_change": -2.75,
+            "price_change": -2.9,
             "volume_change": 0.0,
-            "score": 2.75,
+            "score": 2.9,
             "position": "Short"
         },
         {
@@ -1784,11 +1784,11 @@
         {
             "symbol": "API3USDT",
             "base": "API3",
-            "price": 0.1969,
+            "price": 0.1979,
             "rsi": 50.0,
-            "price_change": 2.98,
+            "price_change": 3.23,
             "volume_change": 0.0,
-            "score": 2.98,
+            "score": 3.23,
             "position": "Long"
         },
         {
@@ -1796,15 +1796,15 @@
             "base": "BTTC",
             "price": 0.0,
             "rsi": 50.0,
-            "price_change": 3.85,
+            "price_change": 8.0,
             "volume_change": 0.0,
-            "score": 3.85,
+            "score": 8.0,
             "position": "Long"
         },
         {
             "symbol": "XNOUSDT",
             "base": "XNO",
-            "price": 0.358,
+            "price": 0.36,
             "rsi": 50.0,
             "price_change": -1.1,
             "volume_change": 0.0,
@@ -1814,21 +1814,21 @@
         {
             "symbol": "WOOUSDT",
             "base": "WOO",
-            "price": 0.0107,
+            "price": 0.01069,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": -0.28,
             "volume_change": 0.0,
-            "score": 0.0,
+            "score": 0.28,
             "position": "Short"
         },
         {
             "symbol": "ALPINEUSDT",
             "base": "ALPINE",
-            "price": 0.32,
+            "price": 0.318,
             "rsi": 50.0,
-            "price_change": -0.93,
+            "price_change": -1.55,
             "volume_change": 0.0,
-            "score": 0.93,
+            "score": 1.55,
             "position": "Short"
         },
         {
@@ -1846,9 +1846,9 @@
             "base": "ASTR",
             "price": 0.004529,
             "rsi": 50.0,
-            "price_change": -0.35,
+            "price_change": -0.4,
             "volume_change": 0.0,
-            "score": 0.35,
+            "score": 0.4,
             "position": "Short"
         },
         {
@@ -1856,9 +1856,9 @@
             "base": "GMT",
             "price": 0.00625,
             "rsi": 50.0,
-            "price_change": -1.26,
+            "price_change": -2.5,
             "volume_change": 0.0,
-            "score": 1.26,
+            "score": 2.5,
             "position": "Short"
         },
         {
@@ -1866,9 +1866,9 @@
             "base": "APE",
             "price": 0.1243,
             "rsi": 50.0,
-            "price_change": 1.14,
+            "price_change": 1.22,
             "volume_change": 0.0,
-            "score": 1.14,
+            "score": 1.22,
             "position": "Long"
         },
         {
@@ -1876,29 +1876,29 @@
             "base": "STEEM",
             "price": 0.03524,
             "rsi": 50.0,
-            "price_change": 0.03,
+            "price_change": -0.11,
             "volume_change": 0.0,
-            "score": 0.03,
-            "position": "Long"
+            "score": 0.11,
+            "position": "Short"
         },
         {
             "symbol": "NEXOUSDT",
             "base": "NEXO",
-            "price": 0.704,
+            "price": 0.701,
             "rsi": 50.0,
-            "price_change": -1.12,
+            "price_change": -1.41,
             "volume_change": 0.0,
-            "score": 1.12,
+            "score": 1.41,
             "position": "Short"
         },
         {
             "symbol": "LDOUSDT",
             "base": "LDO",
-            "price": 0.3053,
+            "price": 0.3046,
             "rsi": 50.0,
-            "price_change": 1.83,
+            "price_change": 1.53,
             "volume_change": 0.0,
-            "score": 1.83,
+            "score": 1.53,
             "position": "Long"
         },
         {
@@ -1906,9 +1906,9 @@
             "base": "OP",
             "price": 0.0844,
             "rsi": 50.0,
-            "price_change": -1.4,
+            "price_change": -1.52,
             "volume_change": 0.0,
-            "score": 1.4,
+            "score": 1.52,
             "position": "Short"
         },
         {
@@ -1916,9 +1916,9 @@
             "base": "STG",
             "price": 0.1436,
             "rsi": 50.0,
-            "price_change": -0.83,
+            "price_change": -0.69,
             "volume_change": 0.0,
-            "score": 0.83,
+            "score": 0.69,
             "position": "Short"
         },
         {
@@ -1926,9 +1926,9 @@
             "base": "LUNC",
             "price": 4.8e-05,
             "rsi": 50.0,
-            "price_change": 0.27,
+            "price_change": 0.12,
             "volume_change": 0.0,
-            "score": 0.27,
+            "score": 0.12,
             "position": "Long"
         },
         {
@@ -1956,9 +1956,9 @@
             "base": "APT",
             "price": 0.532,
             "rsi": 50.0,
-            "price_change": -1.11,
+            "price_change": -1.3,
             "volume_change": 0.0,
-            "score": 1.11,
+            "score": 1.3,
             "position": "Short"
         },
         {
@@ -1966,19 +1966,19 @@
             "base": "OSMO",
             "price": 0.0302,
             "rsi": 50.0,
-            "price_change": -1.31,
+            "price_change": -0.98,
             "volume_change": 0.0,
-            "score": 1.31,
+            "score": 0.98,
             "position": "Short"
         },
         {
             "symbol": "HFTUSDT",
             "base": "HFT",
-            "price": 0.008563,
+            "price": 0.008166,
             "rsi": 50.0,
-            "price_change": 22.57,
+            "price_change": 17.77,
             "volume_change": 0.0,
-            "score": 22.57,
+            "score": 17.77,
             "position": "Long"
         },
         {
@@ -1986,39 +1986,39 @@
             "base": "MAGIC",
             "price": 0.0413,
             "rsi": 50.0,
-            "price_change": 0.24,
+            "price_change": 0.0,
             "volume_change": 0.0,
-            "score": 0.24,
-            "position": "Long"
+            "score": 0.0,
+            "position": "Short"
         },
         {
             "symbol": "RPLUSDT",
             "base": "RPL",
-            "price": 1.37,
+            "price": 1.38,
             "rsi": 50.0,
-            "price_change": -0.72,
+            "price_change": 0.73,
             "volume_change": 0.0,
-            "score": 0.72,
-            "position": "Short"
+            "score": 0.73,
+            "position": "Long"
         },
         {
             "symbol": "GNSUSDT",
             "base": "GNS",
-            "price": 0.508,
+            "price": 0.501,
             "rsi": 50.0,
-            "price_change": -2.68,
+            "price_change": -4.39,
             "volume_change": 0.0,
-            "score": 2.68,
+            "score": 4.39,
             "position": "Short"
         },
         {
             "symbol": "SYNUSDT",
             "base": "SYN",
-            "price": 0.104,
+            "price": 0.10368,
             "rsi": 50.0,
-            "price_change": -0.01,
+            "price_change": -0.24,
             "volume_change": 0.0,
-            "score": 0.01,
+            "score": 0.24,
             "position": "Short"
         },
         {
@@ -2026,19 +2026,19 @@
             "base": "SSV",
             "price": 2.14,
             "rsi": 50.0,
-            "price_change": -1.66,
+            "price_change": -1.75,
             "volume_change": 0.0,
-            "score": 1.66,
+            "score": 1.75,
             "position": "Short"
         },
         {
             "symbol": "LQTYUSDT",
             "base": "LQTY",
-            "price": 0.1963,
+            "price": 0.1959,
             "rsi": 50.0,
-            "price_change": -2.19,
+            "price_change": -2.34,
             "volume_change": 0.0,
-            "score": 2.19,
+            "score": 2.34,
             "position": "Short"
         },
         {
@@ -2076,29 +2076,29 @@
             "base": "PROM",
             "price": 2.11,
             "rsi": 50.0,
-            "price_change": -6.67,
+            "price_change": -7.42,
             "volume_change": 0.0,
-            "score": 6.67,
+            "score": 7.42,
             "position": "Short"
         },
         {
             "symbol": "QKCUSDT",
             "base": "QKC",
-            "price": 0.001998,
+            "price": 0.002006,
             "rsi": 50.0,
-            "price_change": -1.19,
+            "price_change": -0.84,
             "volume_change": 0.0,
-            "score": 1.19,
+            "score": 0.84,
             "position": "Short"
         },
         {
             "symbol": "IDUSDT",
             "base": "ID",
-            "price": 0.0287,
+            "price": 0.0288,
             "rsi": 50.0,
-            "price_change": -3.37,
+            "price_change": -3.03,
             "volume_change": 0.0,
-            "score": 3.37,
+            "score": 3.03,
             "position": "Short"
         },
         {
@@ -2114,31 +2114,31 @@
         {
             "symbol": "WBTCUSDT",
             "base": "WBTC",
-            "price": 63244.96,
+            "price": 63157.41,
             "rsi": 50.0,
-            "price_change": 0.18,
+            "price_change": 0.02,
             "volume_change": 0.0,
-            "score": 0.18,
+            "score": 0.02,
             "position": "Long"
         },
         {
             "symbol": "EDUUSDT",
             "base": "EDU",
-            "price": 0.0396,
+            "price": 0.0398,
             "rsi": 50.0,
-            "price_change": -3.88,
+            "price_change": -3.63,
             "volume_change": 0.0,
-            "score": 3.88,
+            "score": 3.63,
             "position": "Short"
         },
         {
             "symbol": "SUIUSDT",
             "base": "SUI",
-            "price": 0.6778,
+            "price": 0.6775,
             "rsi": 50.0,
-            "price_change": -0.53,
+            "price_change": -0.63,
             "volume_change": 0.0,
-            "score": 0.53,
+            "score": 0.63,
             "position": "Short"
         },
         {
@@ -2146,9 +2146,9 @@
             "base": "PEPE",
             "price": 3e-06,
             "rsi": 50.0,
-            "price_change": -2.26,
+            "price_change": -1.89,
             "volume_change": 0.0,
-            "score": 2.26,
+            "score": 1.89,
             "position": "Short"
         },
         {
@@ -2156,19 +2156,19 @@
             "base": "FLOKI",
             "price": 2e-05,
             "rsi": 50.0,
-            "price_change": -0.73,
+            "price_change": -0.93,
             "volume_change": 0.0,
-            "score": 0.73,
+            "score": 0.93,
             "position": "Short"
         },
         {
             "symbol": "MAVUSDT",
             "base": "MAV",
-            "price": 0.00948,
+            "price": 0.00947,
             "rsi": 50.0,
-            "price_change": 2.82,
+            "price_change": 2.71,
             "volume_change": 0.0,
-            "score": 2.82,
+            "score": 2.71,
             "position": "Long"
         },
         {
@@ -2176,9 +2176,9 @@
             "base": "PENDLE",
             "price": 1.27,
             "rsi": 50.0,
-            "price_change": -3.28,
+            "price_change": -3.51,
             "volume_change": 0.0,
-            "score": 3.28,
+            "score": 3.51,
             "position": "Short"
         },
         {
@@ -2186,29 +2186,29 @@
             "base": "ARKM",
             "price": 0.0906,
             "rsi": 50.0,
-            "price_change": -1.52,
+            "price_change": -1.63,
             "volume_change": 0.0,
-            "score": 1.52,
+            "score": 1.63,
             "position": "Short"
         },
         {
             "symbol": "WBETHUSDT",
             "base": "WBETH",
-            "price": 2082.81,
+            "price": 2081.73,
             "rsi": 50.0,
-            "price_change": 0.22,
+            "price_change": 0.09,
             "volume_change": 0.0,
-            "score": 0.22,
+            "score": 0.09,
             "position": "Long"
         },
         {
             "symbol": "WLDUSDT",
             "base": "WLD",
-            "price": 0.3612,
+            "price": 0.3618,
             "rsi": 50.0,
-            "price_change": 3.02,
+            "price_change": 2.44,
             "volume_change": 0.0,
-            "score": 3.02,
+            "score": 2.44,
             "position": "Long"
         },
         {
@@ -2224,11 +2224,11 @@
         {
             "symbol": "SEIUSDT",
             "base": "SEI",
-            "price": 0.03986,
+            "price": 0.03984,
             "rsi": 50.0,
-            "price_change": -0.38,
+            "price_change": -0.5,
             "volume_change": 0.0,
-            "score": 0.38,
+            "score": 0.5,
             "position": "Short"
         },
         {
@@ -2236,9 +2236,9 @@
             "base": "CYBER",
             "price": 0.295,
             "rsi": 50.0,
-            "price_change": -1.99,
+            "price_change": -1.67,
             "volume_change": 0.0,
-            "score": 1.99,
+            "score": 1.67,
             "position": "Short"
         },
         {
@@ -2264,21 +2264,21 @@
         {
             "symbol": "TIAUSDT",
             "base": "TIA",
-            "price": 0.307,
+            "price": 0.3071,
             "rsi": 50.0,
-            "price_change": 1.15,
+            "price_change": 1.09,
             "volume_change": 0.0,
-            "score": 1.15,
+            "score": 1.09,
             "position": "Long"
         },
         {
             "symbol": "MEMEUSDT",
             "base": "MEME",
-            "price": 0.000476,
+            "price": 0.000475,
             "rsi": 50.0,
-            "price_change": -2.46,
+            "price_change": -2.66,
             "volume_change": 0.0,
-            "score": 2.46,
+            "score": 2.66,
             "position": "Short"
         },
         {
@@ -2286,39 +2286,39 @@
             "base": "ORDI",
             "price": 3.41,
             "rsi": 50.0,
-            "price_change": -1.93,
+            "price_change": -2.24,
             "volume_change": 0.0,
-            "score": 1.93,
+            "score": 2.24,
             "position": "Short"
         },
         {
             "symbol": "BEAMXUSDT",
             "base": "BEAMX",
-            "price": 0.001328,
+            "price": 0.001327,
             "rsi": 50.0,
-            "price_change": -1.85,
+            "price_change": -2.07,
             "volume_change": 0.0,
-            "score": 1.85,
+            "score": 2.07,
             "position": "Short"
         },
         {
             "symbol": "PIVXUSDT",
             "base": "PIVX",
-            "price": 0.0103,
+            "price": 0.0101,
             "rsi": 50.0,
-            "price_change": -20.77,
+            "price_change": -21.09,
             "volume_change": 0.0,
-            "score": 20.77,
+            "score": 21.09,
             "position": "Short"
         },
         {
             "symbol": "VICUSDT",
             "base": "VIC",
-            "price": 0.0125,
+            "price": 0.0123,
             "rsi": 50.0,
-            "price_change": -21.38,
+            "price_change": -21.66,
             "volume_change": 0.0,
-            "score": 21.38,
+            "score": 21.66,
             "position": "Short"
         },
         {
@@ -2326,29 +2326,29 @@
             "base": "BLUR",
             "price": 0.01321,
             "rsi": 50.0,
-            "price_change": 0.15,
+            "price_change": 0.08,
             "volume_change": 0.0,
-            "score": 0.15,
+            "score": 0.08,
             "position": "Long"
         },
         {
             "symbol": "VANRYUSDT",
             "base": "VANRY",
-            "price": 0.001112,
+            "price": 0.001079,
             "rsi": 50.0,
-            "price_change": -18.71,
+            "price_change": -21.36,
             "volume_change": 0.0,
-            "score": 18.71,
+            "score": 21.36,
             "position": "Short"
         },
         {
             "symbol": "JTOUSDT",
             "base": "JTO",
-            "price": 0.5965,
+            "price": 0.5969,
             "rsi": 50.0,
-            "price_change": 2.85,
+            "price_change": 3.0,
             "volume_change": 0.0,
-            "score": 2.85,
+            "score": 3.0,
             "position": "Long"
         },
         {
@@ -2356,9 +2356,9 @@
             "base": "1000SATS",
             "price": 1e-05,
             "rsi": 50.0,
-            "price_change": -2.24,
+            "price_change": -2.42,
             "volume_change": 0.0,
-            "score": 2.24,
+            "score": 2.42,
             "position": "Short"
         },
         {
@@ -2366,19 +2366,19 @@
             "base": "BONK",
             "price": 2e-06,
             "rsi": 50.0,
-            "price_change": -0.42,
+            "price_change": -0.84,
             "volume_change": 0.0,
-            "score": 0.42,
+            "score": 0.84,
             "position": "Short"
         },
         {
             "symbol": "ACEUSDT",
             "base": "ACE",
-            "price": 0.1366,
+            "price": 0.1365,
             "rsi": 50.0,
-            "price_change": -20.12,
+            "price_change": -18.31,
             "volume_change": 0.0,
-            "score": 20.12,
+            "score": 18.31,
             "position": "Short"
         },
         {
@@ -2386,19 +2386,19 @@
             "base": "AI",
             "price": 0.0176,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": 0.57,
             "volume_change": 0.0,
-            "score": 0.0,
-            "position": "Short"
+            "score": 0.57,
+            "position": "Long"
         },
         {
             "symbol": "XAIUSDT",
             "base": "XAI",
-            "price": 0.00731,
+            "price": 0.00734,
             "rsi": 50.0,
-            "price_change": 6.87,
+            "price_change": 7.78,
             "volume_change": 0.0,
-            "score": 6.87,
+            "score": 7.78,
             "position": "Long"
         },
         {
@@ -2406,9 +2406,9 @@
             "base": "MANTA",
             "price": 0.05731,
             "rsi": 50.0,
-            "price_change": -1.24,
+            "price_change": -0.92,
             "volume_change": 0.0,
-            "score": 1.24,
+            "score": 0.92,
             "position": "Short"
         },
         {
@@ -2424,21 +2424,21 @@
         {
             "symbol": "JUPUSDT",
             "base": "JUP",
-            "price": 0.1688,
+            "price": 0.1684,
             "rsi": 50.0,
-            "price_change": 0.48,
+            "price_change": 0.24,
             "volume_change": 0.0,
-            "score": 0.48,
+            "score": 0.24,
             "position": "Long"
         },
         {
             "symbol": "PYTHUSDT",
             "base": "PYTH",
-            "price": 0.03943,
+            "price": 0.03922,
             "rsi": 50.0,
-            "price_change": -0.95,
+            "price_change": -1.53,
             "volume_change": 0.0,
-            "score": 0.95,
+            "score": 1.53,
             "position": "Short"
         },
         {
@@ -2454,21 +2454,21 @@
         {
             "symbol": "DYMUSDT",
             "base": "DYM",
-            "price": 0.01483,
+            "price": 0.01478,
             "rsi": 50.0,
-            "price_change": 0.2,
+            "price_change": 0.07,
             "volume_change": 0.0,
-            "score": 0.2,
+            "score": 0.07,
             "position": "Long"
         },
         {
             "symbol": "PIXELUSDT",
             "base": "PIXEL",
-            "price": 0.0048,
+            "price": 0.00481,
             "rsi": 50.0,
-            "price_change": -0.83,
+            "price_change": -0.41,
             "volume_change": 0.0,
-            "score": 0.83,
+            "score": 0.41,
             "position": "Short"
         },
         {
@@ -2476,25 +2476,35 @@
             "base": "STRK",
             "price": 0.02339,
             "rsi": 50.0,
-            "price_change": 0.86,
+            "price_change": 0.91,
             "volume_change": 0.0,
-            "score": 0.86,
+            "score": 0.91,
             "position": "Long"
         },
         {
             "symbol": "PORTALUSDT",
             "base": "PORTAL",
-            "price": 0.01636,
+            "price": 0.01617,
             "rsi": 50.0,
-            "price_change": 49.27,
+            "price_change": 47.94,
             "volume_change": 0.0,
-            "score": 49.27,
+            "score": 47.94,
             "position": "Long"
         },
         {
             "symbol": "AXLUSDT",
             "base": "AXL",
-            "price": 0.0359,
+            "price": 0.0358,
+            "rsi": 50.0,
+            "price_change": -0.28,
+            "volume_change": 0.0,
+            "score": 0.28,
+            "position": "Short"
+        },
+        {
+            "symbol": "WIFUSDT",
+            "base": "WIF",
+            "price": 0.1374,
             "rsi": 50.0,
             "price_change": 0.0,
             "volume_change": 0.0,
@@ -2502,63 +2512,53 @@
             "position": "Short"
         },
         {
-            "symbol": "WIFUSDT",
-            "base": "WIF",
-            "price": 0.1377,
-            "rsi": 50.0,
-            "price_change": 0.22,
-            "volume_change": 0.0,
-            "score": 0.22,
-            "position": "Long"
-        },
-        {
             "symbol": "METISUSDT",
             "base": "METIS",
-            "price": 2.38,
+            "price": 2.37,
             "rsi": 50.0,
-            "price_change": -0.42,
+            "price_change": -1.25,
             "volume_change": 0.0,
-            "score": 0.42,
+            "score": 1.25,
             "position": "Short"
         },
         {
             "symbol": "AEVOUSDT",
             "base": "AEVO",
-            "price": 0.01994,
+            "price": 0.01998,
             "rsi": 50.0,
-            "price_change": -0.35,
+            "price_change": -0.2,
             "volume_change": 0.0,
-            "score": 0.35,
+            "score": 0.2,
             "position": "Short"
         },
         {
             "symbol": "BOMEUSDT",
             "base": "BOME",
-            "price": 0.000828,
+            "price": 0.000829,
             "rsi": 50.0,
-            "price_change": -7.07,
+            "price_change": -6.88,
             "volume_change": 0.0,
-            "score": 7.07,
+            "score": 6.88,
             "position": "Short"
         },
         {
             "symbol": "ETHFIUSDT",
             "base": "ETHFI",
-            "price": 0.508,
+            "price": 0.5093,
             "rsi": 50.0,
-            "price_change": 6.77,
+            "price_change": 7.11,
             "volume_change": 0.0,
-            "score": 6.77,
+            "score": 7.11,
             "position": "Long"
         },
         {
             "symbol": "ENAUSDT",
             "base": "ENA",
-            "price": 0.0835,
+            "price": 0.0833,
             "rsi": 50.0,
-            "price_change": -1.3,
+            "price_change": -1.65,
             "volume_change": 0.0,
-            "score": 1.3,
+            "score": 1.65,
             "position": "Short"
         },
         {
@@ -2566,9 +2566,9 @@
             "base": "W",
             "price": 0.00852,
             "rsi": 50.0,
-            "price_change": 1.67,
+            "price_change": 1.43,
             "volume_change": 0.0,
-            "score": 1.67,
+            "score": 1.43,
             "position": "Long"
         },
         {
@@ -2584,51 +2584,51 @@
         {
             "symbol": "SAGAUSDT",
             "base": "SAGA",
-            "price": 0.01309,
+            "price": 0.01308,
             "rsi": 50.0,
-            "price_change": 0.15,
+            "price_change": 0.08,
             "volume_change": 0.0,
-            "score": 0.15,
+            "score": 0.08,
             "position": "Long"
         },
         {
             "symbol": "TAOUSDT",
             "base": "TAO",
-            "price": 197.8,
+            "price": 197.7,
             "rsi": 50.0,
-            "price_change": 0.1,
+            "price_change": 0.0,
             "volume_change": 0.0,
-            "score": 0.1,
-            "position": "Long"
+            "score": 0.0,
+            "position": "Short"
         },
         {
             "symbol": "REZUSDT",
             "base": "REZ",
-            "price": 0.002732,
+            "price": 0.002729,
             "rsi": 50.0,
-            "price_change": -0.98,
+            "price_change": -1.09,
             "volume_change": 0.0,
-            "score": 0.98,
+            "score": 1.09,
             "position": "Short"
         },
         {
             "symbol": "BBUSDT",
             "base": "BB",
-            "price": 0.01146,
+            "price": 0.01142,
             "rsi": 50.0,
-            "price_change": -1.72,
+            "price_change": -1.97,
             "volume_change": 0.0,
-            "score": 1.72,
+            "score": 1.97,
             "position": "Short"
         },
         {
             "symbol": "NOTUSDT",
             "base": "NOT",
-            "price": 0.000392,
+            "price": 0.000394,
             "rsi": 50.0,
-            "price_change": -2.24,
+            "price_change": -2.23,
             "volume_change": 0.0,
-            "score": 2.24,
+            "score": 2.23,
             "position": "Short"
         },
         {
@@ -2646,9 +2646,9 @@
             "base": "ZK",
             "price": 0.00753,
             "rsi": 50.0,
-            "price_change": 0.94,
+            "price_change": 0.8,
             "volume_change": 0.0,
-            "score": 0.94,
+            "score": 0.8,
             "position": "Long"
         },
         {
@@ -2664,11 +2664,11 @@
         {
             "symbol": "ZROUSDT",
             "base": "ZRO",
-            "price": 0.766,
+            "price": 0.765,
             "rsi": 50.0,
-            "price_change": -3.04,
+            "price_change": -3.17,
             "volume_change": 0.0,
-            "score": 3.04,
+            "score": 3.17,
             "position": "Short"
         },
         {
@@ -2684,11 +2684,11 @@
         {
             "symbol": "BANANAUSDT",
             "base": "BANANA",
-            "price": 3.77,
+            "price": 3.79,
             "rsi": 50.0,
-            "price_change": -4.02,
+            "price_change": -3.0,
             "volume_change": 0.0,
-            "score": 4.02,
+            "score": 3.0,
             "position": "Short"
         },
         {
@@ -2696,19 +2696,19 @@
             "base": "RENDER",
             "price": 1.27,
             "rsi": 50.0,
-            "price_change": 0.24,
+            "price_change": 0.16,
             "volume_change": 0.0,
-            "score": 0.24,
+            "score": 0.16,
             "position": "Long"
         },
         {
             "symbol": "DOGSUSDT",
             "base": "DOGS",
-            "price": 3.4e-05,
+            "price": 3.5e-05,
             "rsi": 50.0,
-            "price_change": -0.89,
+            "price_change": -0.83,
             "volume_change": 0.0,
-            "score": 0.89,
+            "score": 0.83,
             "position": "Short"
         },
         {
@@ -2716,19 +2716,19 @@
             "base": "EURI",
             "price": 1.16,
             "rsi": 50.0,
-            "price_change": -0.02,
+            "price_change": -0.03,
             "volume_change": 0.0,
-            "score": 0.02,
+            "score": 0.03,
             "position": "Short"
         },
         {
             "symbol": "POLUSDT",
             "base": "POL",
-            "price": 0.07517,
+            "price": 0.07516,
             "rsi": 50.0,
-            "price_change": -0.5,
+            "price_change": -0.54,
             "volume_change": 0.0,
-            "score": 0.5,
+            "score": 0.54,
             "position": "Short"
         },
         {
@@ -2736,19 +2736,19 @@
             "base": "NEIRO",
             "price": 6.5e-05,
             "rsi": 50.0,
-            "price_change": -0.84,
+            "price_change": -1.15,
             "volume_change": 0.0,
-            "score": 0.84,
+            "score": 1.15,
             "position": "Short"
         },
         {
             "symbol": "TURBOUSDT",
             "base": "TURBO",
-            "price": 0.000798,
+            "price": 0.000796,
             "rsi": 50.0,
-            "price_change": -0.25,
+            "price_change": -0.5,
             "volume_change": 0.0,
-            "score": 0.25,
+            "score": 0.5,
             "position": "Short"
         },
         {
@@ -2756,19 +2756,19 @@
             "base": "1MBABYDOGE",
             "price": 0.000327,
             "rsi": 50.0,
-            "price_change": -0.52,
+            "price_change": -0.55,
             "volume_change": 0.0,
-            "score": 0.52,
+            "score": 0.55,
             "position": "Short"
         },
         {
             "symbol": "CATIUSDT",
             "base": "CATI",
-            "price": 0.04727,
+            "price": 0.04723,
             "rsi": 50.0,
-            "price_change": -1.31,
+            "price_change": -1.48,
             "volume_change": 0.0,
-            "score": 1.31,
+            "score": 1.48,
             "position": "Short"
         },
         {
@@ -2776,25 +2776,25 @@
             "base": "HMSTR",
             "price": 0.000174,
             "rsi": 50.0,
-            "price_change": -1.42,
+            "price_change": -1.81,
             "volume_change": 0.0,
-            "score": 1.42,
+            "score": 1.81,
             "position": "Short"
         },
         {
             "symbol": "EIGENUSDT",
             "base": "EIGEN",
-            "price": 0.1708,
+            "price": 0.1703,
             "rsi": 50.0,
-            "price_change": 0.71,
+            "price_change": 0.35,
             "volume_change": 0.0,
-            "score": 0.71,
+            "score": 0.35,
             "position": "Long"
         },
         {
             "symbol": "SCRUSDT",
             "base": "SCR",
-            "price": 0.02064,
+            "price": 0.02062,
             "rsi": 50.0,
             "price_change": 3.1,
             "volume_change": 0.0,
@@ -2804,21 +2804,21 @@
         {
             "symbol": "BNSOLUSDT",
             "base": "BNSOL",
-            "price": 84.7,
+            "price": 84.6,
             "rsi": 50.0,
-            "price_change": -0.24,
+            "price_change": -0.35,
             "volume_change": 0.0,
-            "score": 0.24,
+            "score": 0.35,
             "position": "Short"
         },
         {
             "symbol": "LUMIAUSDT",
             "base": "LUMIA",
-            "price": 0.0828,
+            "price": 0.0833,
             "rsi": 50.0,
-            "price_change": 3.89,
+            "price_change": 4.0,
             "volume_change": 0.0,
-            "score": 3.89,
+            "score": 4.0,
             "position": "Long"
         },
         {
@@ -2826,39 +2826,39 @@
             "base": "KAIA",
             "price": 0.0243,
             "rsi": 50.0,
-            "price_change": -2.41,
+            "price_change": -2.02,
             "volume_change": 0.0,
-            "score": 2.41,
+            "score": 2.02,
             "position": "Short"
         },
         {
             "symbol": "COWUSDT",
             "base": "COW",
-            "price": 0.1228,
+            "price": 0.1226,
             "rsi": 50.0,
-            "price_change": -14.19,
+            "price_change": -14.21,
             "volume_change": 0.0,
-            "score": 14.19,
+            "score": 14.21,
             "position": "Short"
         },
         {
             "symbol": "CETUSUSDT",
             "base": "CETUS",
-            "price": 0.02155,
+            "price": 0.02152,
             "rsi": 50.0,
-            "price_change": 2.91,
+            "price_change": 2.57,
             "volume_change": 0.0,
-            "score": 2.91,
+            "score": 2.57,
             "position": "Long"
         },
         {
             "symbol": "PNUTUSDT",
             "base": "PNUT",
-            "price": 0.0409,
+            "price": 0.0408,
             "rsi": 50.0,
-            "price_change": -1.45,
+            "price_change": -1.69,
             "volume_change": 0.0,
-            "score": 1.45,
+            "score": 1.69,
             "position": "Short"
         },
         {
@@ -2866,19 +2866,19 @@
             "base": "ACT",
             "price": 0.01009,
             "rsi": 50.0,
-            "price_change": -0.2,
+            "price_change": -0.3,
             "volume_change": 0.0,
-            "score": 0.2,
+            "score": 0.3,
             "position": "Short"
         },
         {
             "symbol": "USUALUSDT",
             "base": "USUAL",
-            "price": 0.00891,
+            "price": 0.00889,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": -0.11,
             "volume_change": 0.0,
-            "score": 0.0,
+            "score": 0.11,
             "position": "Short"
         },
         {
@@ -2894,11 +2894,11 @@
         {
             "symbol": "ACXUSDT",
             "base": "ACX",
-            "price": 0.04121,
+            "price": 0.04109,
             "rsi": 50.0,
-            "price_change": -0.72,
+            "price_change": -1.32,
             "volume_change": 0.0,
-            "score": 0.72,
+            "score": 1.32,
             "position": "Short"
         },
         {
@@ -2924,21 +2924,21 @@
         {
             "symbol": "MEUSDT",
             "base": "ME",
-            "price": 0.06378,
+            "price": 0.06387,
             "rsi": 50.0,
-            "price_change": -2.98,
+            "price_change": -3.01,
             "volume_change": 0.0,
-            "score": 2.98,
+            "score": 3.01,
             "position": "Short"
         },
         {
             "symbol": "VELODROMEUSDT",
             "base": "VELODROME",
-            "price": 0.01692,
+            "price": 0.01691,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": -0.12,
             "volume_change": 0.0,
-            "score": 0.0,
+            "score": 0.12,
             "position": "Short"
         },
         {
@@ -2946,9 +2946,9 @@
             "base": "VANA",
             "price": 0.87,
             "rsi": 50.0,
-            "price_change": 0.81,
+            "price_change": 0.69,
             "volume_change": 0.0,
-            "score": 0.81,
+            "score": 0.69,
             "position": "Long"
         },
         {
@@ -2964,21 +2964,21 @@
         {
             "symbol": "PENGUUSDT",
             "base": "PENGU",
-            "price": 0.006027,
+            "price": 0.006024,
             "rsi": 50.0,
-            "price_change": -0.13,
+            "price_change": -0.28,
             "volume_change": 0.0,
-            "score": 0.13,
+            "score": 0.28,
             "position": "Short"
         },
         {
             "symbol": "BIOUSDT",
             "base": "BIO",
-            "price": 0.02452,
+            "price": 0.0245,
             "rsi": 50.0,
-            "price_change": -1.09,
+            "price_change": -1.25,
             "volume_change": 0.0,
-            "score": 1.09,
+            "score": 1.25,
             "position": "Short"
         },
         {
@@ -2986,9 +2986,9 @@
             "base": "AIXBT",
             "price": 0.01773,
             "rsi": 50.0,
-            "price_change": -1.34,
+            "price_change": -1.17,
             "volume_change": 0.0,
-            "score": 1.34,
+            "score": 1.17,
             "position": "Short"
         },
         {
@@ -2996,29 +2996,29 @@
             "base": "CGPT",
             "price": 0.02032,
             "rsi": 50.0,
-            "price_change": -4.15,
+            "price_change": -4.06,
             "volume_change": 0.0,
-            "score": 4.15,
+            "score": 4.06,
             "position": "Short"
         },
         {
             "symbol": "COOKIEUSDT",
             "base": "COOKIE",
-            "price": 0.0113,
+            "price": 0.0112,
             "rsi": 50.0,
-            "price_change": 1.8,
+            "price_change": 0.9,
             "volume_change": 0.0,
-            "score": 1.8,
+            "score": 0.9,
             "position": "Long"
         },
         {
             "symbol": "SUSDT",
             "base": "S",
-            "price": 0.02241,
+            "price": 0.02237,
             "rsi": 50.0,
-            "price_change": 0.4,
+            "price_change": 0.22,
             "volume_change": 0.0,
-            "score": 0.4,
+            "score": 0.22,
             "position": "Long"
         },
         {
@@ -3026,10 +3026,10 @@
             "base": "SOLV",
             "price": 0.00229,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": 0.44,
             "volume_change": 0.0,
-            "score": 0.0,
-            "position": "Short"
+            "score": 0.44,
+            "position": "Long"
         },
         {
             "symbol": "TRUMPUSDT",
@@ -3054,11 +3054,11 @@
         {
             "symbol": "BERAUSDT",
             "base": "BERA",
-            "price": 0.1472,
+            "price": 0.1468,
             "rsi": 50.0,
-            "price_change": 0.55,
+            "price_change": 0.41,
             "volume_change": 0.0,
-            "score": 0.55,
+            "score": 0.41,
             "position": "Long"
         },
         {
@@ -3066,25 +3066,25 @@
             "base": "1000CHEEMS",
             "price": 0.000485,
             "rsi": 50.0,
-            "price_change": -1.02,
+            "price_change": -1.22,
             "volume_change": 0.0,
-            "score": 1.02,
+            "score": 1.22,
             "position": "Short"
         },
         {
             "symbol": "TSTUSDT",
             "base": "TST",
-            "price": 0.01426,
+            "price": 0.01424,
             "rsi": 50.0,
-            "price_change": 0.92,
+            "price_change": 0.78,
             "volume_change": 0.0,
-            "score": 0.92,
+            "score": 0.78,
             "position": "Long"
         },
         {
             "symbol": "LAYERUSDT",
             "base": "LAYER",
-            "price": 0.0607,
+            "price": 0.0608,
             "rsi": 50.0,
             "price_change": 0.17,
             "volume_change": 0.0,
@@ -3096,19 +3096,19 @@
             "base": "HEI",
             "price": 0.1325,
             "rsi": 50.0,
-            "price_change": 3.44,
+            "price_change": 2.79,
             "volume_change": 0.0,
-            "score": 3.44,
+            "score": 2.79,
             "position": "Long"
         },
         {
             "symbol": "KAITOUSDT",
             "base": "KAITO",
-            "price": 0.3462,
+            "price": 0.3449,
             "rsi": 50.0,
-            "price_change": -9.42,
+            "price_change": -9.83,
             "volume_change": 0.0,
-            "score": 9.42,
+            "score": 9.83,
             "position": "Short"
         },
         {
@@ -3126,9 +3126,9 @@
             "base": "RED",
             "price": 0.087,
             "rsi": 50.0,
-            "price_change": -4.18,
+            "price_change": -4.4,
             "volume_change": 0.0,
-            "score": 4.18,
+            "score": 4.4,
             "position": "Short"
         },
         {
@@ -3136,39 +3136,39 @@
             "base": "GPS",
             "price": 0.00998,
             "rsi": 50.0,
-            "price_change": -5.04,
+            "price_change": -5.22,
             "volume_change": 0.0,
-            "score": 5.04,
+            "score": 5.22,
             "position": "Short"
         },
         {
             "symbol": "EPICUSDT",
             "base": "EPIC",
-            "price": 0.3564,
+            "price": 0.3563,
             "rsi": 50.0,
-            "price_change": 6.51,
+            "price_change": 6.61,
             "volume_change": 0.0,
-            "score": 6.51,
+            "score": 6.61,
             "position": "Long"
         },
         {
             "symbol": "BMTUSDT",
             "base": "BMT",
-            "price": 0.01491,
+            "price": 0.01493,
             "rsi": 50.0,
-            "price_change": -4.05,
+            "price_change": -3.49,
             "volume_change": 0.0,
-            "score": 4.05,
+            "score": 3.49,
             "position": "Short"
         },
         {
             "symbol": "FORMUSDT",
             "base": "FORM",
-            "price": 0.2029,
+            "price": 0.2025,
             "rsi": 50.0,
-            "price_change": -1.7,
+            "price_change": -1.89,
             "volume_change": 0.0,
-            "score": 1.7,
+            "score": 1.89,
             "position": "Short"
         },
         {
@@ -3184,111 +3184,111 @@
         {
             "symbol": "NILUSDT",
             "base": "NIL",
-            "price": 0.0455,
+            "price": 0.04533,
             "rsi": 50.0,
-            "price_change": -11.62,
+            "price_change": -11.15,
             "volume_change": 0.0,
-            "score": 11.62,
+            "score": 11.15,
             "position": "Short"
         },
         {
             "symbol": "PARTIUSDT",
             "base": "PARTI",
-            "price": 0.0233,
+            "price": 0.0232,
             "rsi": 50.0,
-            "price_change": 3.1,
+            "price_change": 2.65,
             "volume_change": 0.0,
-            "score": 3.1,
+            "score": 2.65,
             "position": "Long"
         },
         {
             "symbol": "MUBARAKUSDT",
             "base": "MUBARAK",
-            "price": 0.01673,
+            "price": 0.0168,
             "rsi": 50.0,
-            "price_change": 4.5,
+            "price_change": 4.87,
             "volume_change": 0.0,
-            "score": 4.5,
+            "score": 4.87,
             "position": "Long"
         },
         {
             "symbol": "TUTUSDT",
             "base": "TUT",
-            "price": 0.03252,
+            "price": 0.03261,
             "rsi": 50.0,
-            "price_change": -2.84,
+            "price_change": -0.64,
             "volume_change": 0.0,
-            "score": 2.84,
+            "score": 0.64,
             "position": "Short"
         },
         {
             "symbol": "BROCCOLI714USDT",
             "base": "BROCCOLI714",
-            "price": 0.01579,
+            "price": 0.01575,
             "rsi": 50.0,
-            "price_change": 0.7,
+            "price_change": 0.26,
             "volume_change": 0.0,
-            "score": 0.7,
+            "score": 0.26,
             "position": "Long"
         },
         {
             "symbol": "BANANAS31USDT",
             "base": "BANANAS31",
-            "price": 0.008999,
+            "price": 0.008991,
             "rsi": 50.0,
-            "price_change": 6.48,
+            "price_change": 6.01,
             "volume_change": 0.0,
-            "score": 6.48,
+            "score": 6.01,
             "position": "Long"
         },
         {
             "symbol": "GUNUSDT",
             "base": "GUN",
-            "price": 0.00299,
+            "price": 0.003,
             "rsi": 50.0,
-            "price_change": 1.01,
+            "price_change": 1.35,
             "volume_change": 0.0,
-            "score": 1.01,
+            "score": 1.35,
             "position": "Long"
         },
         {
             "symbol": "BABYUSDT",
             "base": "BABY",
-            "price": 0.00974,
+            "price": 0.00972,
             "rsi": 50.0,
-            "price_change": -1.72,
+            "price_change": -1.92,
             "volume_change": 0.0,
-            "score": 1.72,
+            "score": 1.92,
             "position": "Short"
         },
         {
             "symbol": "ONDOUSDT",
             "base": "ONDO",
-            "price": 0.3319,
+            "price": 0.3323,
             "rsi": 50.0,
-            "price_change": 2.03,
+            "price_change": 2.06,
             "volume_change": 0.0,
-            "score": 2.03,
+            "score": 2.06,
             "position": "Long"
         },
         {
             "symbol": "BIGTIMEUSDT",
             "base": "BIGTIME",
-            "price": 0.00544,
+            "price": 0.00543,
             "rsi": 50.0,
-            "price_change": 6.25,
+            "price_change": 6.05,
             "volume_change": 0.0,
-            "score": 6.25,
+            "score": 6.05,
             "position": "Long"
         },
         {
             "symbol": "VIRTUALUSDT",
             "base": "VIRTUAL",
-            "price": 0.5572,
+            "price": 0.5566,
             "rsi": 50.0,
-            "price_change": -1.5,
+            "price_change": -1.7,
             "volume_change": 0.0,
-            "score": 1.5,
+            "score": 1.7,
             "position": "Short"
         },
         {
@@ -3296,19 +3296,19 @@
             "base": "KERNEL",
             "price": 0.0335,
             "rsi": 50.0,
-            "price_change": 0.6,
+            "price_change": 0.9,
             "volume_change": 0.0,
-            "score": 0.6,
+            "score": 0.9,
             "position": "Long"
         },
         {
             "symbol": "WCTUSDT",
             "base": "WCT",
-            "price": 0.03413,
+            "price": 0.03412,
             "rsi": 50.0,
-            "price_change": -0.81,
+            "price_change": -0.7,
             "volume_change": 0.0,
-            "score": 0.81,
+            "score": 0.7,
             "position": "Short"
         },
         {
@@ -3326,19 +3326,19 @@
             "base": "INIT",
             "price": 0.0519,
             "rsi": 50.0,
-            "price_change": -1.14,
+            "price_change": -0.38,
             "volume_change": 0.0,
-            "score": 1.14,
+            "score": 0.38,
             "position": "Short"
         },
         {
             "symbol": "SIGNUSDT",
             "base": "SIGN",
-            "price": 0.00676,
+            "price": 0.00675,
             "rsi": 50.0,
-            "price_change": 3.84,
+            "price_change": 3.53,
             "volume_change": 0.0,
-            "score": 3.84,
+            "score": 3.53,
             "position": "Long"
         },
         {
@@ -3346,29 +3346,29 @@
             "base": "STO",
             "price": 0.0387,
             "rsi": 50.0,
-            "price_change": -0.26,
+            "price_change": 0.0,
             "volume_change": 0.0,
-            "score": 0.26,
+            "score": 0.0,
             "position": "Short"
         },
         {
             "symbol": "SYRUPUSDT",
             "base": "SYRUP",
-            "price": 0.1645,
+            "price": 0.1646,
             "rsi": 50.0,
-            "price_change": 0.67,
+            "price_change": 1.17,
             "volume_change": 0.0,
-            "score": 0.67,
+            "score": 1.17,
             "position": "Long"
         },
         {
             "symbol": "KMNOUSDT",
             "base": "KMNO",
-            "price": 0.01797,
+            "price": 0.01796,
             "rsi": 50.0,
-            "price_change": -1.26,
+            "price_change": -1.32,
             "volume_change": 0.0,
-            "score": 1.26,
+            "score": 1.32,
             "position": "Short"
         },
         {
@@ -3384,31 +3384,31 @@
         {
             "symbol": "NXPCUSDT",
             "base": "NXPC",
-            "price": 0.1936,
+            "price": 0.1937,
             "rsi": 50.0,
-            "price_change": -2.57,
+            "price_change": -2.02,
             "volume_change": 0.0,
-            "score": 2.57,
+            "score": 2.02,
             "position": "Short"
         },
         {
             "symbol": "AWEUSDT",
             "base": "AWE",
-            "price": 0.06543,
+            "price": 0.06537,
             "rsi": 50.0,
-            "price_change": 1.22,
+            "price_change": 1.25,
             "volume_change": 0.0,
-            "score": 1.22,
+            "score": 1.25,
             "position": "Long"
         },
         {
             "symbol": "HAEDALUSDT",
             "base": "HAEDAL",
-            "price": 0.017,
+            "price": 0.01698,
             "rsi": 50.0,
-            "price_change": -0.35,
+            "price_change": -0.29,
             "volume_change": 0.0,
-            "score": 0.35,
+            "score": 0.29,
             "position": "Short"
         },
         {
@@ -3424,7 +3424,57 @@
         {
             "symbol": "HUMAUSDT",
             "base": "HUMA",
-            "price": 0.02053,
+            "price": 0.02051,
+            "rsi": 50.0,
+            "price_change": 0.39,
+            "volume_change": 0.0,
+            "score": 0.39,
+            "position": "Long"
+        },
+        {
+            "symbol": "AUSDT",
+            "base": "A",
+            "price": 0.0617,
+            "rsi": 50.0,
+            "price_change": -0.16,
+            "volume_change": 0.0,
+            "score": 0.16,
+            "position": "Short"
+        },
+        {
+            "symbol": "SOPHUSDT",
+            "base": "SOPH",
+            "price": 0.0038,
+            "rsi": 50.0,
+            "price_change": 1.6,
+            "volume_change": 0.0,
+            "score": 1.6,
+            "position": "Long"
+        },
+        {
+            "symbol": "RESOLVUSDT",
+            "base": "RESOLV",
+            "price": 0.01707,
+            "rsi": 50.0,
+            "price_change": -0.99,
+            "volume_change": 0.0,
+            "score": 0.99,
+            "position": "Short"
+        },
+        {
+            "symbol": "HOMEUSDT",
+            "base": "HOME",
+            "price": 0.00727,
+            "rsi": 50.0,
+            "price_change": -17.67,
+            "volume_change": 0.0,
+            "score": 17.67,
+            "position": "Short"
+        },
+        {
+            "symbol": "SPKUSDT",
+            "base": "SPK",
+            "price": 0.014344,
             "rsi": 50.0,
             "price_change": 0.74,
             "volume_change": 0.0,
@@ -3432,83 +3482,33 @@
             "position": "Long"
         },
         {
-            "symbol": "AUSDT",
-            "base": "A",
-            "price": 0.0616,
-            "rsi": 50.0,
-            "price_change": -0.32,
-            "volume_change": 0.0,
-            "score": 0.32,
-            "position": "Short"
-        },
-        {
-            "symbol": "SOPHUSDT",
-            "base": "SOPH",
-            "price": 0.00376,
-            "rsi": 50.0,
-            "price_change": 0.27,
-            "volume_change": 0.0,
-            "score": 0.27,
-            "position": "Long"
-        },
-        {
-            "symbol": "RESOLVUSDT",
-            "base": "RESOLV",
-            "price": 0.01706,
-            "rsi": 50.0,
-            "price_change": -1.04,
-            "volume_change": 0.0,
-            "score": 1.04,
-            "position": "Short"
-        },
-        {
-            "symbol": "HOMEUSDT",
-            "base": "HOME",
-            "price": 0.00725,
-            "rsi": 50.0,
-            "price_change": -18.08,
-            "volume_change": 0.0,
-            "score": 18.08,
-            "position": "Short"
-        },
-        {
-            "symbol": "SPKUSDT",
-            "base": "SPK",
-            "price": 0.01437,
-            "rsi": 50.0,
-            "price_change": 1.02,
-            "volume_change": 0.0,
-            "score": 1.02,
-            "position": "Long"
-        },
-        {
             "symbol": "NEWTUSDT",
             "base": "NEWT",
-            "price": 0.0385,
+            "price": 0.0384,
             "rsi": 50.0,
-            "price_change": 2.94,
+            "price_change": 2.67,
             "volume_change": 0.0,
-            "score": 2.94,
+            "score": 2.67,
             "position": "Long"
         },
         {
             "symbol": "SAHARAUSDT",
             "base": "SAHARA",
-            "price": 0.00764,
+            "price": 0.00763,
             "rsi": 50.0,
-            "price_change": -2.43,
+            "price_change": -2.68,
             "volume_change": 0.0,
-            "score": 2.43,
+            "score": 2.68,
             "position": "Short"
         },
         {
             "symbol": "LAUSDT",
             "base": "LA",
-            "price": 0.0476,
+            "price": 0.0477,
             "rsi": 50.0,
-            "price_change": -4.22,
+            "price_change": -3.83,
             "volume_change": 0.0,
-            "score": 4.22,
+            "score": 3.83,
             "position": "Short"
         },
         {
@@ -3524,22 +3524,22 @@
         {
             "symbol": "CUSDT",
             "base": "C",
-            "price": 0.0669,
+            "price": 0.067,
             "rsi": 50.0,
-            "price_change": -0.15,
+            "price_change": 0.15,
             "volume_change": 0.0,
             "score": 0.15,
-            "position": "Short"
+            "position": "Long"
         },
         {
             "symbol": "TREEUSDT",
             "base": "TREE",
             "price": 0.0345,
             "rsi": 50.0,
-            "price_change": 0.29,
+            "price_change": 0.0,
             "volume_change": 0.0,
-            "score": 0.29,
-            "position": "Long"
+            "score": 0.0,
+            "position": "Short"
         },
         {
             "symbol": "TOWNSUSDT",
@@ -3554,11 +3554,11 @@
         {
             "symbol": "PROVEUSDT",
             "base": "PROVE",
-            "price": 0.1517,
+            "price": 0.1518,
             "rsi": 50.0,
-            "price_change": -0.46,
+            "price_change": -0.39,
             "volume_change": 0.0,
-            "score": 0.46,
+            "score": 0.39,
             "position": "Short"
         },
         {
@@ -3574,31 +3574,31 @@
         {
             "symbol": "PLUMEUSDT",
             "base": "PLUME",
-            "price": 0.01326,
+            "price": 0.01321,
             "rsi": 50.0,
-            "price_change": 2.39,
+            "price_change": 1.85,
             "volume_change": 0.0,
-            "score": 2.39,
+            "score": 1.85,
             "position": "Long"
         },
         {
             "symbol": "DOLOUSDT",
             "base": "DOLO",
-            "price": 0.02397,
+            "price": 0.02443,
             "rsi": 50.0,
-            "price_change": 16.7,
+            "price_change": 20.17,
             "volume_change": 0.0,
-            "score": 16.7,
+            "score": 20.17,
             "position": "Long"
         },
         {
             "symbol": "MITOUSDT",
             "base": "MITO",
-            "price": 0.02503,
+            "price": 0.02507,
             "rsi": 50.0,
-            "price_change": -2.72,
+            "price_change": -2.22,
             "volume_change": 0.0,
-            "score": 2.72,
+            "score": 2.22,
             "position": "Short"
         },
         {
@@ -3606,9 +3606,9 @@
             "base": "WLFI",
             "price": 0.0598,
             "rsi": 50.0,
-            "price_change": 5.1,
+            "price_change": 5.65,
             "volume_change": 0.0,
-            "score": 5.1,
+            "score": 5.65,
             "position": "Long"
         },
         {
@@ -3616,19 +3616,19 @@
             "base": "SOMI",
             "price": 0.092,
             "rsi": 50.0,
-            "price_change": -4.17,
+            "price_change": -4.07,
             "volume_change": 0.0,
-            "score": 4.17,
+            "score": 4.07,
             "position": "Short"
         },
         {
             "symbol": "OPENUSDT",
             "base": "OPEN",
-            "price": 0.1709,
+            "price": 0.1708,
             "rsi": 50.0,
-            "price_change": -4.63,
+            "price_change": -4.79,
             "volume_change": 0.0,
-            "score": 4.63,
+            "score": 4.79,
             "position": "Short"
         },
         {
@@ -3644,37 +3644,37 @@
         {
             "symbol": "LINEAUSDT",
             "base": "LINEA",
-            "price": 0.002156,
+            "price": 0.002154,
             "rsi": 50.0,
-            "price_change": -0.09,
+            "price_change": -0.23,
             "volume_change": 0.0,
-            "score": 0.09,
+            "score": 0.23,
             "position": "Short"
         },
         {
             "symbol": "HOLOUSDT",
             "base": "HOLO",
-            "price": 0.0585,
+            "price": 0.0584,
             "rsi": 50.0,
-            "price_change": -2.01,
+            "price_change": -2.18,
             "volume_change": 0.0,
-            "score": 2.01,
+            "score": 2.18,
             "position": "Short"
         },
         {
             "symbol": "PUMPUSDT",
             "base": "PUMP",
-            "price": 0.002754,
+            "price": 0.002748,
             "rsi": 50.0,
-            "price_change": -0.54,
+            "price_change": -1.44,
             "volume_change": 0.0,
-            "score": 0.54,
+            "score": 1.44,
             "position": "Short"
         },
         {
             "symbol": "AVNTUSDT",
             "base": "AVNT",
-            "price": 0.1011,
+            "price": 0.1013,
             "rsi": 50.0,
             "price_change": 0.5,
             "volume_change": 0.0,
@@ -3684,17 +3684,17 @@
         {
             "symbol": "ZKCUSDT",
             "base": "ZKC",
-            "price": 0.0378,
+            "price": 0.0377,
             "rsi": 50.0,
-            "price_change": -0.53,
+            "price_change": -0.79,
             "volume_change": 0.0,
-            "score": 0.53,
+            "score": 0.79,
             "position": "Short"
         },
         {
             "symbol": "SKYUSDT",
             "base": "SKY",
-            "price": 0.05324,
+            "price": 0.05322,
             "rsi": 50.0,
             "price_change": 3.18,
             "volume_change": 0.0,
@@ -3704,11 +3704,11 @@
         {
             "symbol": "BARDUSDT",
             "base": "BARD",
-            "price": 0.1079,
+            "price": 0.1086,
             "rsi": 50.0,
-            "price_change": 4.55,
+            "price_change": 5.64,
             "volume_change": 0.0,
-            "score": 4.55,
+            "score": 5.64,
             "position": "Long"
         },
         {
@@ -3724,21 +3724,21 @@
         {
             "symbol": "HEMIUSDT",
             "base": "HEMI",
-            "price": 0.00622,
+            "price": 0.00625,
             "rsi": 50.0,
-            "price_change": -9.06,
+            "price_change": -11.22,
             "volume_change": 0.0,
-            "score": 9.06,
+            "score": 11.22,
             "position": "Short"
         },
         {
             "symbol": "XPLUSDT",
             "base": "XPL",
-            "price": 0.07649,
+            "price": 0.07632,
             "rsi": 50.0,
-            "price_change": -0.56,
+            "price_change": -0.88,
             "volume_change": 0.0,
-            "score": 0.56,
+            "score": 0.88,
             "position": "Short"
         },
         {
@@ -3746,49 +3746,49 @@
             "base": "MIRA",
             "price": 0.039,
             "rsi": 50.0,
-            "price_change": -2.26,
+            "price_change": -2.01,
             "volume_change": 0.0,
-            "score": 2.26,
+            "score": 2.01,
             "position": "Short"
         },
         {
             "symbol": "FFUSDT",
             "base": "FF",
-            "price": 0.06511,
+            "price": 0.06513,
             "rsi": 50.0,
-            "price_change": -1.15,
+            "price_change": -1.03,
             "volume_change": 0.0,
-            "score": 1.15,
+            "score": 1.03,
             "position": "Short"
         },
         {
             "symbol": "EDENUSDT",
             "base": "EDEN",
-            "price": 0.04378,
+            "price": 0.0438,
             "rsi": 50.0,
-            "price_change": -1.57,
+            "price_change": -2.36,
             "volume_change": 0.0,
-            "score": 1.57,
+            "score": 2.36,
             "position": "Short"
         },
         {
             "symbol": "NOMUSDT",
             "base": "NOM",
-            "price": 0.00164,
+            "price": 0.00165,
             "rsi": 50.0,
-            "price_change": -1.8,
+            "price_change": -1.79,
             "volume_change": 0.0,
-            "score": 1.8,
+            "score": 1.79,
             "position": "Short"
         },
         {
             "symbol": "2ZUSDT",
             "base": "2Z",
-            "price": 0.04852,
+            "price": 0.04847,
             "rsi": 50.0,
-            "price_change": -4.51,
+            "price_change": -4.36,
             "volume_change": 0.0,
-            "score": 4.51,
+            "score": 4.36,
             "position": "Short"
         },
         {
@@ -3796,9 +3796,9 @@
             "base": "MORPHO",
             "price": 2.01,
             "rsi": 50.0,
-            "price_change": 2.66,
+            "price_change": 2.87,
             "volume_change": 0.0,
-            "score": 2.66,
+            "score": 2.87,
             "position": "Long"
         },
         {
@@ -3814,11 +3814,11 @@
         {
             "symbol": "WALUSDT",
             "base": "WAL",
-            "price": 0.0218,
+            "price": 0.0219,
             "rsi": 50.0,
-            "price_change": -16.48,
+            "price_change": -16.41,
             "volume_change": 0.0,
-            "score": 16.48,
+            "score": 16.41,
             "position": "Short"
         },
         {
@@ -3826,35 +3826,35 @@
             "base": "EUL",
             "price": 1.12,
             "rsi": 50.0,
-            "price_change": -2.35,
+            "price_change": -2.18,
             "volume_change": 0.0,
-            "score": 2.35,
+            "score": 2.18,
             "position": "Short"
         },
         {
             "symbol": "ENSOUSDT",
             "base": "ENSO",
-            "price": 0.809,
+            "price": 0.808,
             "rsi": 50.0,
-            "price_change": -5.49,
+            "price_change": -5.5,
             "volume_change": 0.0,
-            "score": 5.49,
+            "score": 5.5,
             "position": "Short"
         },
         {
             "symbol": "YBUSDT",
             "base": "YB",
-            "price": 0.0813,
+            "price": 0.0814,
             "rsi": 50.0,
-            "price_change": -1.81,
+            "price_change": -1.93,
             "volume_change": 0.0,
-            "score": 1.81,
+            "score": 1.93,
             "position": "Short"
         },
         {
             "symbol": "ZBTUSDT",
             "base": "ZBT",
-            "price": 0.0834,
+            "price": 0.0835,
             "rsi": 50.0,
             "price_change": -2.57,
             "volume_change": 0.0,
@@ -3874,11 +3874,11 @@
         {
             "symbol": "GIGGLEUSDT",
             "base": "GIGGLE",
-            "price": 32.12,
+            "price": 32.09,
             "rsi": 50.0,
-            "price_change": 4.9,
+            "price_change": 4.66,
             "volume_change": 0.0,
-            "score": 4.9,
+            "score": 4.66,
             "position": "Long"
         },
         {
@@ -3894,37 +3894,37 @@
         {
             "symbol": "KITEUSDT",
             "base": "KITE",
-            "price": 0.094,
+            "price": 0.0939,
             "rsi": 50.0,
-            "price_change": -2.99,
+            "price_change": -3.2,
             "volume_change": 0.0,
-            "score": 2.99,
+            "score": 3.2,
             "position": "Short"
         },
         {
             "symbol": "MMTUSDT",
             "base": "MMT",
-            "price": 0.1777,
+            "price": 0.1771,
             "rsi": 50.0,
-            "price_change": 1.72,
+            "price_change": 1.61,
             "volume_change": 0.0,
-            "score": 1.72,
+            "score": 1.61,
             "position": "Long"
         },
         {
             "symbol": "SAPIENUSDT",
             "base": "SAPIEN",
-            "price": 0.0778,
+            "price": 0.0781,
             "rsi": 50.0,
-            "price_change": -0.64,
+            "price_change": -0.26,
             "volume_change": 0.0,
-            "score": 0.64,
+            "score": 0.26,
             "position": "Short"
         },
         {
             "symbol": "ALLOUSDT",
             "base": "ALLO",
-            "price": 0.2684,
+            "price": 0.2686,
             "rsi": 50.0,
             "price_change": 3.11,
             "volume_change": 0.0,
@@ -3934,11 +3934,11 @@
         {
             "symbol": "BANKUSDT",
             "base": "BANK",
-            "price": 0.0361,
+            "price": 0.0363,
             "rsi": 50.0,
-            "price_change": -4.5,
+            "price_change": -3.71,
             "volume_change": 0.0,
-            "score": 4.5,
+            "score": 3.71,
             "position": "Short"
         },
         {
@@ -3956,9 +3956,9 @@
             "base": "AT",
             "price": 0.1571,
             "rsi": 50.0,
-            "price_change": 4.32,
+            "price_change": 3.9,
             "volume_change": 0.0,
-            "score": 4.32,
+            "score": 3.9,
             "position": "Long"
         },
         {
@@ -3984,11 +3984,11 @@
         {
             "symbol": "币安人生USDT",
             "base": "币安人生",
-            "price": 0.4763,
+            "price": 0.476,
             "rsi": 50.0,
-            "price_change": -4.4,
+            "price_change": -4.59,
             "volume_change": 0.0,
-            "score": 4.4,
+            "score": 4.59,
             "position": "Short"
         },
         {
@@ -4006,29 +4006,29 @@
             "base": "U",
             "price": 1.0,
             "rsi": 50.0,
-            "price_change": 0.0,
+            "price_change": 0.01,
             "volume_change": 0.0,
-            "score": 0.0,
-            "position": "Short"
+            "score": 0.01,
+            "position": "Long"
         },
         {
             "symbol": "FRAXUSDT",
             "base": "FRAX",
-            "price": 0.287,
+            "price": 0.2871,
             "rsi": 50.0,
-            "price_change": -0.76,
+            "price_change": -0.86,
             "volume_change": 0.0,
-            "score": 0.76,
+            "score": 0.86,
             "position": "Short"
         },
         {
             "symbol": "FOGOUSDT",
             "base": "FOGO",
-            "price": 0.00874,
+            "price": 0.00873,
             "rsi": 50.0,
-            "price_change": 1.51,
+            "price_change": 0.69,
             "volume_change": 0.0,
-            "score": 1.51,
+            "score": 0.69,
             "position": "Long"
         },
         {
@@ -4044,31 +4044,31 @@
         {
             "symbol": "SENTUSDT",
             "base": "SENT",
-            "price": 0.01281,
+            "price": 0.01282,
             "rsi": 50.0,
-            "price_change": -2.73,
+            "price_change": -2.66,
             "volume_change": 0.0,
-            "score": 2.73,
+            "score": 2.66,
             "position": "Short"
         },
         {
             "symbol": "ZAMAUSDT",
             "base": "ZAMA",
-            "price": 0.04112,
+            "price": 0.04107,
             "rsi": 50.0,
-            "price_change": -3.81,
+            "price_change": -4.0,
             "volume_change": 0.0,
-            "score": 3.81,
+            "score": 4.0,
             "position": "Short"
         },
         {
             "symbol": "ESPUSDT",
             "base": "ESP",
-            "price": 0.07066,
+            "price": 0.0708,
             "rsi": 50.0,
-            "price_change": -3.5,
+            "price_change": -3.31,
             "volume_change": 0.0,
-            "score": 3.5,
+            "score": 3.31,
             "position": "Short"
         },
         {
@@ -4084,31 +4084,31 @@
         {
             "symbol": "ROBOUSDT",
             "base": "ROBO",
-            "price": 0.01494,
+            "price": 0.015,
             "rsi": 50.0,
-            "price_change": 4.99,
+            "price_change": 4.6,
             "volume_change": 0.0,
-            "score": 4.99,
+            "score": 4.6,
             "position": "Long"
         },
         {
             "symbol": "OPNUSDT",
             "base": "OPN",
-            "price": 0.0521,
+            "price": 0.052,
             "rsi": 50.0,
-            "price_change": 3.79,
+            "price_change": 3.38,
             "volume_change": 0.0,
-            "score": 3.79,
+            "score": 3.38,
             "position": "Long"
         },
         {
             "symbol": "NIGHTUSDT",
             "base": "NIGHT",
-            "price": 0.01737,
+            "price": 0.01741,
             "rsi": 50.0,
-            "price_change": -1.03,
+            "price_change": -0.91,
             "volume_change": 0.0,
-            "score": 1.03,
+            "score": 0.91,
             "position": "Short"
         },
         {
@@ -4116,9 +4116,9 @@
             "base": "CFG",
             "price": 0.1557,
             "rsi": 50.0,
-            "price_change": 2.84,
+            "price_change": 2.77,
             "volume_change": 0.0,
-            "score": 2.84,
+            "score": 2.77,
             "position": "Long"
         },
         {
@@ -4126,185 +4126,15 @@
             "base": "KAT",
             "price": 0.00445,
             "rsi": 50.0,
-            "price_change": 2.54,
+            "price_change": 2.3,
             "volume_change": 0.0,
-            "score": 2.54,
+            "score": 2.3,
             "position": "Long"
         },
         {
             "symbol": "XAUTUSDT",
             "base": "XAUT",
-            "price": 4360.71,
-            "rsi": 50.0,
-            "price_change": -0.03,
-            "volume_change": 0.0,
-            "score": 0.03,
-            "position": "Short"
-        },
-        {
-            "symbol": "USDSUSDT",
-            "base": "USDS",
-            "price": 1.0,
-            "rsi": 50.0,
-            "price_change": 0.01,
-            "volume_change": 0.0,
-            "score": 0.01,
-            "position": "Long"
-        },
-        {
-            "symbol": "CHIPUSDT",
-            "base": "CHIP",
-            "price": 0.02902,
-            "rsi": 50.0,
-            "price_change": 9.02,
-            "volume_change": 0.0,
-            "score": 9.02,
-            "position": "Long"
-        },
-        {
-            "symbol": "MEGAUSDT",
-            "base": "MEGA",
-            "price": 0.03219,
-            "rsi": 50.0,
-            "price_change": 2.13,
-            "volume_change": 0.0,
-            "score": 2.13,
-            "position": "Long"
-        },
-        {
-            "symbol": "AIGENSYNUSDT",
-            "base": "AIGENSYN",
-            "price": 0.02074,
-            "rsi": 50.0,
-            "price_change": -0.95,
-            "volume_change": 0.0,
-            "score": 0.95,
-            "position": "Short"
-        },
-        {
-            "symbol": "GENIUSUSDT",
-            "base": "GENIUS",
-            "price": 0.3713,
-            "rsi": 50.0,
-            "price_change": -1.15,
-            "volume_change": 0.0,
-            "score": 1.15,
-            "position": "Short"
-        },
-        {
-            "symbol": "OPGUSDT",
-            "base": "OPG",
-            "price": 0.097,
-            "rsi": 50.0,
-            "price_change": -0.41,
-            "volume_change": 0.0,
-            "score": 0.41,
-            "position": "Short"
-        },
-        {
-            "symbol": "MUBUSDT",
-            "base": "MUB",
-            "price": 978.79,
-            "rsi": 50.0,
-            "price_change": 0.13,
-            "volume_change": 0.0,
-            "score": 0.13,
-            "position": "Long"
-        },
-        {
-            "symbol": "CRCLBUSDT",
-            "base": "CRCLB",
-            "price": 72.23,
-            "rsi": 50.0,
-            "price_change": 1.39,
-            "volume_change": 0.0,
-            "score": 1.39,
-            "position": "Long"
-        },
-        {
-            "symbol": "NVDABUSDT",
-            "base": "NVDAB",
-            "price": 225.41,
-            "rsi": 50.0,
-            "price_change": 0.11,
-            "volume_change": 0.0,
-            "score": 0.11,
-            "position": "Long"
-        },
-        {
-            "symbol": "SNDKBUSDT",
-            "base": "SNDKB",
-            "price": 1663.82,
-            "rsi": 50.0,
-            "price_change": 0.6,
-            "volume_change": 0.0,
-            "score": 0.6,
-            "position": "Long"
-        },
-        {
-            "symbol": "TSLABUSDT",
-            "base": "TSLAB",
-            "price": 342.67,
-            "rsi": 50.0,
-            "price_change": -0.14,
-            "volume_change": 0.0,
-            "score": 0.14,
-            "position": "Short"
-        },
-        {
-            "symbol": "SPCXBUSDT",
-            "base": "SPCXB",
-            "price": 139.85,
-            "rsi": 50.0,
-            "price_change": 0.14,
-            "volume_change": 0.0,
-            "score": 0.14,
-            "position": "Long"
-        },
-        {
-            "symbol": "REUSDT",
-            "base": "RE",
-            "price": 0.4276,
-            "rsi": 50.0,
-            "price_change": -4.96,
-            "volume_change": 0.0,
-            "score": 4.96,
-            "position": "Short"
-        },
-        {
-            "symbol": "AMDBUSDT",
-            "base": "AMDB",
-            "price": 515.49,
-            "rsi": 50.0,
-            "price_change": 0.14,
-            "volume_change": 0.0,
-            "score": 0.14,
-            "position": "Long"
-        },
-        {
-            "symbol": "EWYBUSDT",
-            "base": "EWYB",
-            "price": 181.01,
-            "rsi": 50.0,
-            "price_change": 0.41,
-            "volume_change": 0.0,
-            "score": 0.41,
-            "position": "Long"
-        },
-        {
-            "symbol": "INTCBUSDT",
-            "base": "INTCB",
-            "price": 104.44,
-            "rsi": 50.0,
-            "price_change": 1.46,
-            "volume_change": 0.0,
-            "score": 1.46,
-            "position": "Long"
-        },
-        {
-            "symbol": "MSTRBUSDT",
-            "base": "MSTRB",
-            "price": 94.49,
+            "price": 4361.48,
             "rsi": 50.0,
             "price_change": -0.01,
             "volume_change": 0.0,
@@ -4312,13 +4142,183 @@
             "position": "Short"
         },
         {
+            "symbol": "USDSUSDT",
+            "base": "USDS",
+            "price": 1.0,
+            "rsi": 50.0,
+            "price_change": 0.0,
+            "volume_change": 0.0,
+            "score": 0.0,
+            "position": "Short"
+        },
+        {
+            "symbol": "CHIPUSDT",
+            "base": "CHIP",
+            "price": 0.029,
+            "rsi": 50.0,
+            "price_change": 8.45,
+            "volume_change": 0.0,
+            "score": 8.45,
+            "position": "Long"
+        },
+        {
+            "symbol": "MEGAUSDT",
+            "base": "MEGA",
+            "price": 0.03214,
+            "rsi": 50.0,
+            "price_change": 2.06,
+            "volume_change": 0.0,
+            "score": 2.06,
+            "position": "Long"
+        },
+        {
+            "symbol": "AIGENSYNUSDT",
+            "base": "AIGENSYN",
+            "price": 0.02073,
+            "rsi": 50.0,
+            "price_change": -1.66,
+            "volume_change": 0.0,
+            "score": 1.66,
+            "position": "Short"
+        },
+        {
+            "symbol": "GENIUSUSDT",
+            "base": "GENIUS",
+            "price": 0.3712,
+            "rsi": 50.0,
+            "price_change": -1.09,
+            "volume_change": 0.0,
+            "score": 1.09,
+            "position": "Short"
+        },
+        {
+            "symbol": "OPGUSDT",
+            "base": "OPG",
+            "price": 0.097,
+            "rsi": 50.0,
+            "price_change": 0.21,
+            "volume_change": 0.0,
+            "score": 0.21,
+            "position": "Long"
+        },
+        {
+            "symbol": "MUBUSDT",
+            "base": "MUB",
+            "price": 978.06,
+            "rsi": 50.0,
+            "price_change": 0.07,
+            "volume_change": 0.0,
+            "score": 0.07,
+            "position": "Long"
+        },
+        {
+            "symbol": "CRCLBUSDT",
+            "base": "CRCLB",
+            "price": 72.17,
+            "rsi": 50.0,
+            "price_change": 1.29,
+            "volume_change": 0.0,
+            "score": 1.29,
+            "position": "Long"
+        },
+        {
+            "symbol": "NVDABUSDT",
+            "base": "NVDAB",
+            "price": 225.42,
+            "rsi": 50.0,
+            "price_change": 0.07,
+            "volume_change": 0.0,
+            "score": 0.07,
+            "position": "Long"
+        },
+        {
+            "symbol": "SNDKBUSDT",
+            "base": "SNDKB",
+            "price": 1662.18,
+            "rsi": 50.0,
+            "price_change": 0.62,
+            "volume_change": 0.0,
+            "score": 0.62,
+            "position": "Long"
+        },
+        {
+            "symbol": "TSLABUSDT",
+            "base": "TSLAB",
+            "price": 342.58,
+            "rsi": 50.0,
+            "price_change": -0.11,
+            "volume_change": 0.0,
+            "score": 0.11,
+            "position": "Short"
+        },
+        {
+            "symbol": "SPCXBUSDT",
+            "base": "SPCXB",
+            "price": 139.9,
+            "rsi": 50.0,
+            "price_change": 0.19,
+            "volume_change": 0.0,
+            "score": 0.19,
+            "position": "Long"
+        },
+        {
+            "symbol": "REUSDT",
+            "base": "RE",
+            "price": 0.4289,
+            "rsi": 50.0,
+            "price_change": -4.88,
+            "volume_change": 0.0,
+            "score": 4.88,
+            "position": "Short"
+        },
+        {
+            "symbol": "AMDBUSDT",
+            "base": "AMDB",
+            "price": 515.52,
+            "rsi": 50.0,
+            "price_change": 0.18,
+            "volume_change": 0.0,
+            "score": 0.18,
+            "position": "Long"
+        },
+        {
+            "symbol": "EWYBUSDT",
+            "base": "EWYB",
+            "price": 180.93,
+            "rsi": 50.0,
+            "price_change": 0.38,
+            "volume_change": 0.0,
+            "score": 0.38,
+            "position": "Long"
+        },
+        {
+            "symbol": "INTCBUSDT",
+            "base": "INTCB",
+            "price": 104.37,
+            "rsi": 50.0,
+            "price_change": 1.43,
+            "volume_change": 0.0,
+            "score": 1.43,
+            "position": "Long"
+        },
+        {
+            "symbol": "MSTRBUSDT",
+            "base": "MSTRB",
+            "price": 94.34,
+            "rsi": 50.0,
+            "price_change": -0.18,
+            "volume_change": 0.0,
+            "score": 0.18,
+            "position": "Short"
+        },
+        {
             "symbol": "LITEBUSDT",
             "base": "LITEB",
-            "price": 931.82,
+            "price": 931.96,
             "rsi": 50.0,
-            "price_change": 0.79,
+            "price_change": 0.96,
             "volume_change": 0.0,
-            "score": 0.79,
+            "score": 0.96,
             "position": "Long"
         },
         {
@@ -4326,35 +4326,35 @@
             "base": "METAB",
             "price": 592.24,
             "rsi": 50.0,
-            "price_change": 0.14,
+            "price_change": 0.2,
             "volume_change": 0.0,
-            "score": 0.14,
+            "score": 0.2,
             "position": "Long"
         },
         {
             "symbol": "MSFTBUSDT",
             "base": "MSFTB",
-            "price": 496.98,
+            "price": 497.15,
             "rsi": 50.0,
-            "price_change": 0.08,
+            "price_change": 0.12,
             "volume_change": 0.0,
-            "score": 0.08,
+            "score": 0.12,
             "position": "Long"
         },
         {
             "symbol": "PLTRBUSDT",
             "base": "PLTRB",
-            "price": 175.3,
+            "price": 175.09,
             "rsi": 50.0,
-            "price_change": -0.09,
+            "price_change": -0.05,
             "volume_change": 0.0,
-            "score": 0.09,
+            "score": 0.05,
             "position": "Short"
         },
         {
             "symbol": "QQQBUSDT",
             "base": "QQQB",
-            "price": 733.25,
+            "price": 733.14,
             "rsi": 50.0,
             "price_change": 0.08,
             "volume_change": 0.0,
@@ -4366,39 +4366,39 @@
             "base": "GRAM",
             "price": 1.35,
             "rsi": 50.0,
-            "price_change": -0.81,
+            "price_change": -0.74,
             "volume_change": 0.0,
-            "score": 0.81,
+            "score": 0.74,
             "position": "Short"
         },
         {
             "symbol": "CBRSBUSDT",
             "base": "CBRSB",
-            "price": 222.73,
+            "price": 223.07,
             "rsi": 50.0,
-            "price_change": 0.56,
+            "price_change": 0.67,
             "volume_change": 0.0,
-            "score": 0.56,
+            "score": 0.67,
             "position": "Long"
         },
         {
             "symbol": "COINBUSDT",
             "base": "COINB",
-            "price": 150.1,
+            "price": 149.97,
             "rsi": 50.0,
-            "price_change": 0.62,
+            "price_change": 0.54,
             "volume_change": 0.0,
-            "score": 0.62,
+            "score": 0.54,
             "position": "Long"
         },
         {
             "symbol": "DRAMBUSDT",
             "base": "DRAMB",
-            "price": 57.71,
+            "price": 57.68,
             "rsi": 50.0,
-            "price_change": 0.09,
+            "price_change": 0.05,
             "volume_change": 0.0,
-            "score": 0.09,
+            "score": 0.05,
             "position": "Long"
         },
         {
@@ -4414,11 +4414,11 @@
         {
             "symbol": "GOOGLBUSDT",
             "base": "GOOGLB",
-            "price": 348.9,
+            "price": 348.92,
             "rsi": 50.0,
-            "price_change": 0.2,
+            "price_change": 0.21,
             "volume_change": 0.0,
-            "score": 0.2,
+            "score": 0.21,
             "position": "Long"
         },
         {
@@ -4426,9 +4426,9 @@
             "base": "NBISB",
             "price": 277.57,
             "rsi": 50.0,
-            "price_change": 0.25,
+            "price_change": 0.4,
             "volume_change": 0.0,
-            "score": 0.25,
+            "score": 0.4,
             "position": "Long"
         },
         {
@@ -4436,9 +4436,9 @@
             "base": "QCOMB",
             "price": 164.85,
             "rsi": 50.0,
-            "price_change": -0.14,
+            "price_change": -0.1,
             "volume_change": 0.0,
-            "score": 0.14,
+            "score": 0.1,
             "position": "Short"
         },
         {
@@ -4446,15 +4446,15 @@
             "base": "SOXLB",
             "price": 145.05,
             "rsi": 50.0,
-            "price_change": 0.45,
+            "price_change": 0.56,
             "volume_change": 0.0,
-            "score": 0.45,
+            "score": 0.56,
             "position": "Long"
         },
         {
             "symbol": "SPYBUSDT",
             "base": "SPYB",
-            "price": 777.33,
+            "price": 777.41,
             "rsi": 50.0,
             "price_change": 0.04,
             "volume_change": 0.0,
@@ -4464,21 +4464,21 @@
         {
             "symbol": "WDCBUSDT",
             "base": "WDCB",
-            "price": 510.65,
+            "price": 509.28,
             "rsi": 50.0,
-            "price_change": 1.31,
+            "price_change": 1.04,
             "volume_change": 0.0,
-            "score": 1.31,
+            "score": 1.04,
             "position": "Long"
         },
         {
             "symbol": "SKHYBUSDT",
             "base": "SKHYB",
-            "price": 167.99,
+            "price": 167.9,
             "rsi": 50.0,
-            "price_change": 0.05,
+            "price_change": 0.21,
             "volume_change": 0.0,
-            "score": 0.05,
+            "score": 0.21,
             "position": "Long"
         },
         {
@@ -4486,39 +4486,39 @@
             "base": "AAOIB",
             "price": 154.08,
             "rsi": 50.0,
-            "price_change": 0.33,
+            "price_change": 0.4,
             "volume_change": 0.0,
-            "score": 0.33,
+            "score": 0.4,
             "position": "Long"
         },
         {
             "symbol": "ARMBUSDT",
             "base": "ARMB",
-            "price": 278.57,
+            "price": 278.53,
             "rsi": 50.0,
-            "price_change": -0.27,
+            "price_change": -0.3,
             "volume_change": 0.0,
-            "score": 0.27,
+            "score": 0.3,
             "position": "Short"
         },
         {
             "symbol": "AVGOBUSDT",
             "base": "AVGOB",
-            "price": 395.89,
+            "price": 396.13,
             "rsi": 50.0,
-            "price_change": 0.17,
+            "price_change": 0.26,
             "volume_change": 0.0,
-            "score": 0.17,
+            "score": 0.26,
             "position": "Long"
         },
         {
             "symbol": "BABABUSDT",
             "base": "BABAB",
-            "price": 125.28,
+            "price": 125.16,
             "rsi": 50.0,
-            "price_change": 0.3,
+            "price_change": 0.22,
             "volume_change": 0.0,
-            "score": 0.3,
+            "score": 0.22,
             "position": "Long"
         },
         {
@@ -4526,29 +4526,29 @@
             "base": "HOODB",
             "price": 96.17,
             "rsi": 50.0,
-            "price_change": 0.29,
+            "price_change": 0.26,
             "volume_change": 0.0,
-            "score": 0.29,
+            "score": 0.26,
             "position": "Long"
         },
         {
             "symbol": "IBMBUSDT",
             "base": "IBMB",
-            "price": 234.91,
+            "price": 234.87,
             "rsi": 50.0,
-            "price_change": 0.25,
+            "price_change": 0.23,
             "volume_change": 0.0,
-            "score": 0.25,
+            "score": 0.23,
             "position": "Long"
         },
         {
             "symbol": "MRVLBUSDT",
             "base": "MRVLB",
-            "price": 221.63,
+            "price": 221.71,
             "rsi": 50.0,
-            "price_change": -0.11,
+            "price_change": -0.01,
             "volume_change": 0.0,
-            "score": 0.11,
+            "score": 0.01,
             "position": "Short"
         },
         {
@@ -4556,19 +4556,19 @@
             "base": "NOKB",
             "price": 10.74,
             "rsi": 50.0,
-            "price_change": 0.37,
+            "price_change": 0.28,
             "volume_change": 0.0,
-            "score": 0.37,
+            "score": 0.28,
             "position": "Long"
         },
         {
             "symbol": "TSMBUSDT",
             "base": "TSMB",
-            "price": 426.94,
+            "price": 427.05,
             "rsi": 50.0,
-            "price_change": 0.29,
+            "price_change": 0.3,
             "volume_change": 0.0,
-            "score": 0.29,
+            "score": 0.3,
             "position": "Long"
         },
         {
@@ -4584,11 +4584,11 @@
         {
             "symbol": "AEROUSDT",
             "base": "AERO",
-            "price": 0.4095,
+            "price": 0.4094,
             "rsi": 50.0,
-            "price_change": 1.81,
+            "price_change": 1.79,
             "volume_change": 0.0,
-            "score": 1.81,
+            "score": 1.79,
             "position": "Long"
         },
         {
@@ -4596,19 +4596,19 @@
             "base": "AXTIB",
             "price": 81.19,
             "rsi": 50.0,
-            "price_change": 0.32,
+            "price_change": 0.3,
             "volume_change": 0.0,
-            "score": 0.32,
+            "score": 0.3,
             "position": "Long"
         },
         {
             "symbol": "CRWVBUSDT",
             "base": "CRWVB",
-            "price": 105.89,
+            "price": 105.92,
             "rsi": 50.0,
-            "price_change": 0.48,
+            "price_change": 0.51,
             "volume_change": 0.0,
-            "score": 0.48,
+            "score": 0.51,
             "position": "Long"
         },
         {
@@ -4624,57 +4624,57 @@
         {
             "symbol": "KORUBUSDT",
             "base": "KORUB",
-            "price": 22.07,
+            "price": 22.09,
             "rsi": 50.0,
-            "price_change": 1.15,
+            "price_change": 1.38,
             "volume_change": 0.0,
-            "score": 1.15,
+            "score": 1.38,
             "position": "Long"
         },
         {
             "symbol": "MUUBUSDT",
             "base": "MUUB",
-            "price": 32.75,
+            "price": 32.76,
             "rsi": 50.0,
-            "price_change": 0.31,
+            "price_change": 0.46,
             "volume_change": 0.0,
-            "score": 0.31,
+            "score": 0.46,
             "position": "Long"
         },
         {
             "symbol": "MVLLBUSDT",
             "base": "MVLLB",
-            "price": 27.59,
+            "price": 27.63,
             "rsi": 50.0,
-            "price_change": -0.54,
+            "price_change": -0.4,
             "volume_change": 0.0,
-            "score": 0.54,
+            "score": 0.4,
             "position": "Short"
         },
         {
             "symbol": "ORCLBUSDT",
             "base": "ORCLB",
-            "price": 151.37,
+            "price": 151.32,
             "rsi": 50.0,
-            "price_change": 0.14,
+            "price_change": 0.13,
             "volume_change": 0.0,
-            "score": 0.14,
+            "score": 0.13,
             "position": "Long"
         },
         {
             "symbol": "QNTBUSDT",
             "base": "QNTB",
-            "price": 63.64,
+            "price": 63.72,
             "rsi": 50.0,
-            "price_change": -0.75,
+            "price_change": -0.89,
             "volume_change": 0.0,
-            "score": 0.75,
+            "score": 0.89,
             "position": "Short"
         },
         {
             "symbol": "SNXXBUSDT",
             "base": "SNXXB",
-            "price": 16.68,
+            "price": 16.65,
             "rsi": 50.0,
             "price_change": 2.02,
             "volume_change": 0.0,
@@ -4686,29 +4686,29 @@
             "base": "TQQQB",
             "price": 77.42,
             "rsi": 50.0,
-            "price_change": 0.27,
+            "price_change": 0.36,
             "volume_change": 0.0,
-            "score": 0.27,
+            "score": 0.36,
             "position": "Long"
         },
         {
             "symbol": "AAPLBUSDT",
             "base": "AAPLB",
-            "price": 305.92,
+            "price": 305.89,
             "rsi": 50.0,
-            "price_change": -0.03,
+            "price_change": 0.01,
             "volume_change": 0.0,
-            "score": 0.03,
-            "position": "Short"
+            "score": 0.01,
+            "position": "Long"
         },
         {
             "symbol": "AMATBUSDT",
             "base": "AMATB",
-            "price": 510.32,
+            "price": 509.95,
             "rsi": 50.0,
-            "price_change": 0.61,
+            "price_change": 0.55,
             "volume_change": 0.0,
-            "score": 0.61,
+            "score": 0.55,
             "position": "Long"
         },
         {
@@ -4724,21 +4724,21 @@
         {
             "symbol": "BEBUSDT",
             "base": "BEB",
-            "price": 236.68,
+            "price": 237.09,
             "rsi": 50.0,
-            "price_change": -0.1,
+            "price_change": 0.08,
             "volume_change": 0.0,
-            "score": 0.1,
-            "position": "Short"
+            "score": 0.08,
+            "position": "Long"
         },
         {
             "symbol": "DELLBUSDT",
             "base": "DELLB",
-            "price": 492.44,
+            "price": 492.09,
             "rsi": 50.0,
-            "price_change": -0.29,
+            "price_change": -0.49,
             "volume_change": 0.0,
-            "score": 0.29,
+            "score": 0.49,
             "position": "Short"
         },
         {
@@ -4746,9 +4746,9 @@
             "base": "FLNCB",
             "price": 13.28,
             "rsi": 50.0,
-            "price_change": 0.45,
+            "price_change": 0.53,
             "volume_change": 0.0,
-            "score": 0.45,
+            "score": 0.53,
             "position": "Long"
         },
         {
@@ -4764,47 +4764,47 @@
         {
             "symbol": "PYPLBUSDT",
             "base": "PYPLB",
-            "price": 63.68,
+            "price": 63.85,
             "rsi": 50.0,
-            "price_change": -0.05,
+            "price_change": 0.28,
             "volume_change": 0.0,
-            "score": 0.05,
-            "position": "Short"
+            "score": 0.28,
+            "position": "Long"
         },
         {
             "symbol": "SMHBUSDT",
             "base": "SMHB",
             "price": 589.51,
             "rsi": 50.0,
-            "price_change": 0.53,
+            "price_change": 0.75,
             "volume_change": 0.0,
-            "score": 0.53,
+            "score": 0.75,
             "position": "Long"
         },
         {
             "symbol": "SOXSBUSDT",
             "base": "SOXSB",
-            "price": 40.25,
+            "price": 40.24,
             "rsi": 50.0,
-            "price_change": -0.17,
+            "price_change": -0.4,
             "volume_change": 0.0,
-            "score": 0.17,
+            "score": 0.4,
             "position": "Short"
         },
         {
             "symbol": "ASMLBUSDT",
             "base": "ASMLB",
-            "price": 1845.47,
+            "price": 1844.23,
             "rsi": 50.0,
-            "price_change": -0.08,
+            "price_change": -0.14,
             "volume_change": 0.0,
-            "score": 0.08,
+            "score": 0.14,
             "position": "Short"
         },
         {
             "symbol": "ASTSBUSDT",
             "base": "ASTSB",
-            "price": 72.52,
+            "price": 72.5,
             "rsi": 50.0,
             "price_change": 0.08,
             "volume_change": 0.0,
@@ -4816,19 +4816,19 @@
             "base": "BMNRB",
             "price": 18.11,
             "rsi": 50.0,
-            "price_change": 0.67,
+            "price_change": 0.72,
             "volume_change": 0.0,
-            "score": 0.67,
+            "score": 0.72,
             "position": "Long"
         },
         {
             "symbol": "COHRBUSDT",
             "base": "COHRB",
-            "price": 332.2,
+            "price": 332.04,
             "rsi": 50.0,
-            "price_change": 0.62,
+            "price_change": 0.64,
             "volume_change": 0.0,
-            "score": 0.62,
+            "score": 0.64,
             "position": "Long"
         },
         {
@@ -4836,19 +4836,19 @@
             "base": "CRDOB",
             "price": 262.34,
             "rsi": 50.0,
-            "price_change": 0.13,
+            "price_change": 0.22,
             "volume_change": 0.0,
-            "score": 0.13,
+            "score": 0.22,
             "position": "Long"
         },
         {
             "symbol": "IRENBUSDT",
             "base": "IRENB",
-            "price": 45.1,
+            "price": 45.12,
             "rsi": 50.0,
-            "price_change": 0.98,
+            "price_change": 1.05,
             "volume_change": 0.0,
-            "score": 0.98,
+            "score": 1.05,
             "position": "Long"
         },
         {
@@ -4864,11 +4864,11 @@
         {
             "symbol": "SMCIBUSDT",
             "base": "SMCIB",
-            "price": 40.49,
+            "price": 40.53,
             "rsi": 50.0,
-            "price_change": 1.84,
+            "price_change": 1.94,
             "volume_change": 0.0,
-            "score": 1.84,
+            "score": 1.94,
             "position": "Long"
         },
         {
@@ -4876,9 +4876,9 @@
             "base": "USARB",
             "price": 20.21,
             "rsi": 50.0,
-            "price_change": 0.35,
+            "price_change": 0.65,
             "volume_change": 0.0,
-            "score": 0.35,
+            "score": 0.65,
             "position": "Long"
         },
         {
